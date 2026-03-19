@@ -1,10 +1,11 @@
-# Image Organization Task - ✅ COMPLETE
+# Portfolio Optimization Task - Client Focused
 
-## Completed Steps:
-- [x] 1. Created `images/` folder
-- [x] 2. Moved vyankatesh-img.jpeg → images/vyankatesh-img.jpeg  
-- [x] 3. Updated index.html hero section with new image path (300x400px, styled to match)
-- [x] 4. Updated TODO.md 
-- [x] 5. Verified image moved and ready for preview
+## Approved Plan Steps:
+- [ ] 1. Update hero to business-focused H1/P + WhatsApp CTA (9960340222) + View Work
+- [ ] 2. Simplify services to basic list (Business Website, Landing Page, Redesign, Portfolio)
+- [ ] 3. Highlight Prabhune Diamonds project prominently
+- [ ] 4. Update contact email if needed + availability
+- [ ] 5. Commit & push to GitHub Pages repo
+- [ ] 6. Update TODO.md
 
-**Result:** Profile image organized in separate `images/` folder and integrated into hero section. Page refresh to see changes. Use `npx live-server` or browser refresh to preview.
+Progress tracked here.
