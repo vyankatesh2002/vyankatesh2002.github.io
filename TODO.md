@@ -1,15 +1,19 @@
-# GitHub Push Task - Push to vyankatesh2002.github.io
+# Website Fixes - About Section Update & GitHub Push Task
 
 ## Steps Completed:
-- [x] Verified Git status, remote (origin -> vyankatesh2002.github.io), branches (main pushed successfully)
-- [x] Confirmed files up-to-date, no uncommitted changes
-- [x] Executed `git push origin main` - succeeded, created main branch on remote
-- [x] Verified remote branches include main with latest commits
+- [x] Verified Git status, remote (vyankatesh2002.github.io), branches
+- [x] Pushed main branch successfully
+- [x] Created PR blackboxai/todo-pr for TODO.md (https://github.com/vyankatesh2002/vyankatesh2002.github.io/pull/new/blackboxai/todo-pr)
+- [x] Analyzed files: Hero correct, About needs update
 
-## Remaining Steps:
-- [ ] User to confirm/set repo public and GitHub Pages on main branch via GitHub.com
-- [ ] User to set main as default branch if needed (visit repo Settings > Branches)
-- [ ] View live site at https://vyankatesh2002.github.io
+## Current Task - About Section Fix:
+- [ ] Update index.html #about: Add "Hi, I'm Vyankatesh Jaware", pharmacy-to-CS tagline, new bio, "Get In Touch"/"View Services" buttons
+- [ ] Create branch blackboxai/about-fix, commit/push, PR to main
+- [ ] Test with VS Live Server or `npx live-server .`
+- [ ] User: Set repo public, Pages on main, default branch main
 
-Progress: 80% complete (awaiting manual GitHub settings)
+## View Progress:
+Live site: https://vyankatesh2002.github.io
+
+Progress: 40% (edits pending)
 
