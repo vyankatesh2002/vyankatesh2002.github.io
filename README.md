@@ -1,4 +1,4 @@
-# 🚀 Vyankatesh Jaware
+8# 🚀 Vyankatesh Jaware
 
 💻 Web Developer | Building Real Business Websites  
 📍 Maharashtra, India  
@@ -39,7 +39,7 @@ I don't just build websites — I build **business assets**.
 **Frontend**
 - HTML5
 - CSS3
-- JavaScript (ES6+)
+- JavaScript 
 
 **Tools**
 - Git & GitHub
