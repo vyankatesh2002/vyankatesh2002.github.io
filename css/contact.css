@@ -1,0 +1,58 @@
+/* ============================================================
+   CONTACT PAGE STYLES
+   ============================================================ */
+
+/* ----- Form Inputs ----- */
+input,
+textarea {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 0.9rem 1.2rem;
+  width: 100%;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--text);
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #2563EB;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* ----- Submit Button ----- */
+button[type="submit"] {
+  background: #2563EB;
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  padding: 0.85rem 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+button[type="submit"]:hover {
+  background: #1D4ED8;
+}
+
+/* ----- Map ----- */
+.map-wrapper {
+  height: 350px;
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 768px) {
+  input, textarea { font-size: 0.9rem; }
+  .map-wrapper { height: 250px; }
+}
+

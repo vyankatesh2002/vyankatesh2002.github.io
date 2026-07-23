@@ -1,346 +1,405 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="Vyankatesh Jaware – Web developer blending pharmacy & AI for high‑conversion websites. Founder of Vynora premium rides.">
-  <title>Vyankatesh Jaware · Web Dev & Vynora</title>
-  <!-- Favicon (simple) -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232563eb'/%3E%3Ctext x='50' y='68' font-size='50' text-anchor='middle' fill='white' font-family='Inter' font-weight='bold'%3EV%3C/text%3E%3C/svg%3E">
-  <!-- Font Awesome 6 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css"
-  <!-- Google Fonts: Inter -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
- 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Vyankatesh Jaware – AI Engineer, ML Engineer, Full Stack Developer. Building intelligent systems that solve real-world problems." />
+  <meta name="author" content="Vyankatesh Jaware" />
+  <meta property="og:title" content="Vyankatesh Jaware | AI Engineer & Developer" />
+  <meta property="og:description"
+    content="Premium portfolio of an AI Engineer combining healthcare background with cutting-edge technology." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vyankatesh2002.github.io/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>Vyankatesh Jaware · AI Engineer & Full Stack Developer</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['Poppins', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            primary: { 400: '#3B82F6', 500: '#2563EB', 600: '#1D4ED8' },
+            accent: { 400: '#06B6D4', 500: '#06B6D4' },
+            purple: { 500: '#7C3AED', 600: '#6D28D9' },
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Libraries (loaded synchronously so available to our scripts) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
 </head>
-<body>
 
-<header id="mainHeader">
-  <div class="container header-container">
-    <a href="#" class="logo">Vyankatesh</a>
-    <button class="mobile-menu-btn" aria-label="Menu"><i class="fas fa-bars"></i></button>
-    <ul class="nav-links">
-      <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
-      <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
-      <li><a href="#services"><i class="fas fa-cog"></i> Services</a></li>
-      <li><a href="#work"><i class="fas fa-briefcase"></i> Work</a></li>
-      <li><a href="#career"><i class="fas fa-graduation-cap"></i> Career</a></li>
-      <li><a href="#vynora"><i class="fas fa-motorcycle"></i> Vynora</a></li>
-      <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-    </ul>
-  </div>
-</header>
+<body class="font-body bg-white text-gray-900 antialiased">
 
-<main>
-  <!-- HOME / HERO -->
-  <section id="home" class="hero">
-    <div class="container hero-container">
-      <div class="hero-content reveal">
-        <h1>Web Solutions That Drive Growth</h1>
-        <div class="hero-tagline"><i class="fas fa-flask"></i> Pharmacy precision · Clean code · Real results.</div>
-        <div class="hero-buttons">
-          <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Start Project</a>
-          <a href="https://prabhunediamond.com/" class="btn btn-outline"><i class="fas fa-eye"></i> View Work</a>
-          <a href="https://wa.me/919960340222" class="btn btn-vynora"><i class="fas fa-motorcycle"></i> Vynora Ride</a>
+  <!-- Particle Background -->
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- Skip to content -->
+  <a href="#main-content"
+    class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:bg-primary-500 focus:text-white focus:px-4 focus:py-2 focus:rounded-full focus:z-50">
+    Skip to main content
+  </a>
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50 glass border-b border-gray-200/20" aria-label="Main navigation">
+    <div class="container mx-auto px-6 flex items-center justify-between py-4">
+      <a href="#home" class="text-2xl font-bold gradient-text font-heading" aria-label="Home">Vyanki</a>
+      <div class="hidden lg:flex items-center gap-8">
+        <a href="#home" class="nav-link-active">Home</a>
+        <a href="About.html" class="nav-link">About</a>
+        <a href="Skills.html" class="nav-link">Skills</a>
+        <a href="Project.html" class="nav-link">Projects</a>
+        <a href="Experince.html" class="nav-link">Experience</a>
+        <a href="Contact.html" class="nav-link">Contact</a>
+        <button id="theme-toggle" class="nav-link text-xl" aria-label="Toggle theme"><i
+            class="fas fa-moon"></i></button>
+        <a href="Resume.html"
+          class="bg-primary-500 hover:bg-primary-600 text-white px-5 py-2 rounded-full font-medium transition">Resume</a>
+      </div>
+      <button id="mobile-toggle" class="lg:hidden text-2xl text-gray-800" aria-label="Toggle mobile menu"
+        aria-expanded="false"><i class="fas fa-bars"></i></button>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden glass p-6 flex flex-col gap-4 bg-white/90" role="navigation"
+      aria-label="Mobile navigation">
+      <a href="#home" class="nav-link-active">Home</a>
+      <a href="About.html" class="nav-link">About</a>
+      <a href="Skills.html" class="nav-link">Skills</a>
+      <a href="Project.html" class="nav-link">Projects</a>
+      <a href="Experince.html" class="nav-link">Experience</a>
+      <a href="Contact.html" class="nav-link">Contact</a>
+      <a href="Resume.html" class="bg-primary-500 text-white py-2 rounded-full text-center">Resume</a>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center relative pt-20" aria-label="Hero">
+      <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-12">
+        <div class="flex-1" data-aos="fade-right" data-aos-duration="1000">
+          <p class="text-primary-500 text-lg font-semibold mb-2">Hello, I'm</p>
+          <h1 class="font-heading text-5xl lg:text-7xl font-extrabold leading-tight mb-4">Vyankatesh Vivekanand Jaware
+          </h1>
+          <div class="text-2xl lg:text-3xl font-semibold text-primary-500 mb-6"><span id="typed"></span></div>
+          <p class="text-gray-600 max-w-xl mb-8">AI Engineer &amp; Full-Stack Developer blending healthcare precision
+            with cutting-edge technology to build intelligent systems that solve real-world problems.</p>
+          <div class="flex flex-wrap gap-4">
+            <a href="Resume.html"
+              class="bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-full font-semibold transition inline-flex items-center gap-2"><i
+                class="fas fa-download" aria-hidden="true"></i> Resume</a>
+            <a href="Project.html"
+              class="border border-primary-500 text-primary-500 hover:bg-primary-50 px-6 py-3 rounded-full font-semibold transition inline-flex items-center gap-2"><i
+                class="fas fa-code" aria-hidden="true"></i> Projects</a>
+            <a href="Contact.html"
+              class="bg-purple-500 hover:bg-purple-600 text-white px-6 py-3 rounded-full font-semibold transition inline-flex items-center gap-2"><i
+                class="fas fa-paper-plane" aria-hidden="true"></i> Hire Me</a>
+          </div>
+          <div class="flex gap-5 mt-8 text-xl text-gray-400">
+            <a href="https://github.com/vyankatesh2002" target="_blank" rel="noopener noreferrer"
+              class="hover:text-primary-500 transition" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/vyankatesh-jaware-0397a325a" target="_blank" rel="noopener noreferrer"
+              class="hover:text-primary-500 transition" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/vyankatesh_jaware" target="_blank" rel="noopener noreferrer"
+              class="hover:text-primary-500 transition" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:vyankateshvjaware2002@gmail.com" class="hover:text-primary-500 transition"
+              aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="flex-1 flex justify-center" data-aos="zoom-in" data-aos-duration="1000">
+          <div
+            class="relative w-64 h-64 lg:w-80 lg:h-80 rounded-full p-1 bg-gradient-to-tr from-primary-500 via-purple-500 to-accent-400">
+            <img src="images/22561.jpg" alt="Vyankatesh Jaware"
+              class="w-full h-full object-cover rounded-full border-4 border-white" loading="eager" />
+          </div>
         </div>
       </div>
-      <div class="hero-img reveal">
-        <img src="images/abhi-img.png" alt="Vyankatesh Jaware" onerror="this.src='https://placehold.co/400x500/1e293b/white?text=VJ'">
-      </div>
-    </div>
-  </section>
+      <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce"><i
+          class="fas fa-chevron-down text-2xl text-primary-400" aria-hidden="true"></i></div>
+    </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="section-dark" style="padding-bottom:4rem;">
-    <div class="container">
-      <h2><i class="fas fa-user-astronaut"></i> About & Core Values</h2>
-      <div class="about-black-block reveal">
-        <div style="display:flex; gap:2rem; flex-wrap:wrap;">
-          <div style="flex:2;">
-            <div style="display:flex; align-items:center; gap:1rem; margin-bottom:1.8rem;">
-              <i class="fas fa-flask" style="font-size:2.8rem; color:var(--accent);"></i>
-              <div><h3 style="font-size:2rem; color:white;">Vyankatesh Jaware</h3><span style="background:var(--accent); padding:0.2rem 1.2rem; border-radius:30px;"><i class="fas fa-graduation-cap"></i> D.Pharm + B.Sc CS</span></div>
+    <!-- About Section -->
+    <section id="about" class="py-20" aria-label="About Me">
+      <div class="container mx-auto px-6">
+        <h2 class="font-heading text-4xl font-bold mb-12 text-center" data-aos="fade-up">About Me</h2>
+        <div class="max-w-4xl mx-auto glass-card p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="200">
+          <p class="text-gray-700 text-lg mb-6">I'm a <strong class="text-gray-900">Computer Science student</strong>
+            specializing in <strong class="text-primary-500">Artificial Intelligence, Machine Learning, and Virtual
+              Reality</strong>. My unique journey began with a <strong class="text-gray-900">Diploma in
+              Pharmacy</strong> and <strong class="text-primary-500">1.5 years of professional experience</strong> as a
+            Quality Control Associate. Currently, I also work night shifts at <strong class="text-gray-900">Green Plus
+              Pharmacy</strong>, which sharpens my time management and discipline.</p>
+          <p class="text-gray-700 text-lg">That background instilled in me <strong class="text-gray-900">discipline,
+              analytical thinking, and attention to detail</strong> — qualities I now bring to every line of code. I'm
+            driven by a mission to <strong class="text-primary-500">build AI products that solve real-world healthcare
+              problems</strong>, merging domain expertise with modern technology.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-16 bg-gray-50" aria-label="Statistics">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto text-center">
+          <article class="glass-card p-6 rounded-2xl" data-aos="fade-up">
+            <div class="text-4xl font-extrabold text-primary-500">8</div>
+            <div class="text-gray-600 mt-2">Projects</div>
+          </article>
+          <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+            <div class="text-4xl font-extrabold text-primary-500">6</div>
+            <div class="text-gray-600 mt-2">GitHub Repos</div>
+          </article>
+          <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+            <div class="text-4xl font-extrabold text-primary-500">200</div>
+            <div class="text-gray-600 mt-2">Learning Hours</div>
+          </article>
+          <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="300">
+            <div class="text-4xl font-extrabold text-primary-500">2</div>
+            <div class="text-gray-600 mt-2">Years Experience</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20" aria-label="Skills">
+      <div class="container mx-auto px-6 max-w-6xl">
+        <h2 class="font-heading text-4xl font-bold mb-12 text-center" data-aos="fade-up">Skills &amp; Expertise</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <article class="glass-card p-6 rounded-2xl" data-aos="fade-up">
+            <h3 class="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-800"><i
+                class="fas fa-code text-primary-500" aria-hidden="true"></i> Programming</h3>
+            <div class="flex flex-wrap gap-2"><span
+                class="bg-blue-50 text-primary-500 px-3 py-1 rounded-full text-sm">Python</span><span
+                class="bg-blue-50 text-primary-500 px-3 py-1 rounded-full text-sm">C++</span><span
+                class="bg-blue-50 text-primary-500 px-3 py-1 rounded-full text-sm">JavaScript</span><span
+                class="bg-blue-50 text-primary-500 px-3 py-1 rounded-full text-sm">SQL</span></div>
+          </article>
+          <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="50">
+            <h3 class="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-800"><i
+                class="fas fa-desktop text-accent-500" aria-hidden="true"></i> Frontend</h3>
+            <div class="flex flex-wrap gap-2"><span
+                class="bg-cyan-50 text-accent-500 px-3 py-1 rounded-full text-sm">HTML</span><span
+                class="bg-cyan-50 text-accent-500 px-3 py-1 rounded-full text-sm">CSS</span><span
+                class="bg-cyan-50 text-accent-500 px-3 py-1 rounded-full text-sm">Tailwind</span><span
+                class="bg-cyan-50 text-accent-500 px-3 py-1 rounded-full text-sm">Bootstrap</span><span
+                class="bg-cyan-50 text-accent-500 px-3 py-1 rounded-full text-sm">React (Learning)</span></div>
+          </article>
+          <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-800"><i
+                class="fas fa-server text-purple-500" aria-hidden="true"></i> Backend</h3>
+            <div class="flex flex-wrap gap-2"><span
+                class="bg-purple-50 text-purple-500 px-3 py-1 rounded-full text-sm">Node.js</span><span
+                class="bg-purple-50 text-purple-500 px-3 py-1 rounded-full text-sm">Express</span><span
+                class="bg-purple-50 text-purple-500 px-3 py-1 rounded-full text-sm">FastAPI (Learning)</span></div>
+          </article>
+          <article class="glass-card p-6 rounded-2xl" data-aos="fade-up">
+            <h3 class="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-800"><i
+                class="fas fa-database text-green-500" aria-hidden="true"></i> Database</h3>
+            <div class="flex flex-wrap gap-2"><span
+                class="bg-green-50 text-green-500 px-3 py-1 rounded-full text-sm">MongoDB</span><span
+                class="bg-green-50 text-green-500 px-3 py-1 rounded-full text-sm">PostgreSQL</span><span
+                class="bg-green-50 text-green-500 px-3 py-1 rounded-full text-sm">Firebase</span><span
+                class="bg-green-50 text-green-500 px-3 py-1 rounded-full text-sm">Supabase</span></div>
+          </article>
+          <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="50">
+            <h3 class="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-800"><i
+                class="fas fa-brain text-yellow-500" aria-hidden="true"></i> AI / ML</h3>
+            <div class="flex flex-wrap gap-2"><span
+                class="bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full text-sm">NumPy</span><span
+                class="bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full text-sm">Pandas</span><span
+                class="bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full text-sm">Scikit-Learn</span><span
+                class="bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full text-sm">TensorFlow</span><span
+                class="bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full text-sm">PyTorch</span><span
+                class="bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full text-sm">OpenCV</span><span
+                class="bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full text-sm">HuggingFace</span></div>
+          </article>
+          <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-800"><i
+                class="fas fa-cloud text-sky-500" aria-hidden="true"></i> Cloud &amp; DevOps</h3>
+            <div class="flex flex-wrap gap-2"><span
+                class="bg-sky-50 text-sky-500 px-3 py-1 rounded-full text-sm">Git</span><span
+                class="bg-sky-50 text-sky-500 px-3 py-1 rounded-full text-sm">GitHub</span><span
+                class="bg-sky-50 text-sky-500 px-3 py-1 rounded-full text-sm">Docker</span><span
+                class="bg-sky-50 text-sky-500 px-3 py-1 rounded-full text-sm">AWS</span><span
+                class="bg-sky-50 text-sky-500 px-3 py-1 rounded-full text-sm">Vercel</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50" aria-label="Featured Projects">
+      <div class="container mx-auto px-6">
+        <h2 class="font-heading text-4xl font-bold mb-12 text-center" data-aos="fade-up">Featured Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section id="experience" class="py-20" aria-label="Education and Experience">
+      <div class="container mx-auto px-6 max-w-6xl">
+        <h2 class="font-heading text-4xl font-bold mb-12 text-center" data-aos="fade-up">Education &amp; Experience</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-2xl font-bold mb-6 gradient-text" data-aos="fade-up"><i class="fas fa-graduation-cap mr-2"
+                aria-hidden="true"></i> Education</h3>
+            <div class="space-y-6">
+              <article class="glass-card p-6 rounded-2xl highlight-card" data-aos="fade-up" data-aos-delay="100"><span
+                  class="text-sm font-semibold text-primary-500">2024 – Present</span>
+                <h4 class="text-lg font-semibold mt-1">B.Sc Computer Science</h4>
+                <p class="text-sm text-gray-600">AI · ML · Virtual Reality</p>
+                <p class="text-xs mt-2 text-gray-500">Sandip University, Nashik</p>
+              </article>
+              <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="150"><span
+                  class="text-sm font-semibold text-purple-500">2021 – 2024</span>
+                <h4 class="text-lg font-semibold mt-1">Diploma in Pharmacy</h4>
+                <p class="text-sm text-gray-600">Pharmaceutical Sciences · Quality Standards</p>
+                <p class="text-xs mt-2 text-gray-500">Jijamata College of Pharmacy, Sarati</p>
+              </article>
+              <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="200"><span
+                  class="text-sm font-semibold text-accent-500">2018 – 2020</span>
+                <h4 class="text-lg font-semibold mt-1">Higher Secondary (12th)</h4>
+                <p class="text-sm text-gray-600">Science Stream</p>
+                <p class="text-xs mt-2 text-gray-500">Saraswati Madhyamik Vidyalay, Sundarkhed</p>
+              </article>
             </div>
-            <p style="font-size:1.2rem; color:#e2e8f0;">“I engineer digital experiences with analytical precision — blending healthcare mindset with modern web technologies.”</p>
-            <p style="color:#cbd5e1; margin-top:1rem;"><i class="fas fa-map-pin"></i> Based in Maharashtra, India · Working worldwide</p>
           </div>
-          <div style="flex:1.5; background:#15151e; border-radius:28px; padding:2rem;">
-            <h4 style="color:white;"><i class="fas fa-star" style="color:var(--vynora);"></i> What drives me</h4>
-            <ul style="list-style:none; color:#cbd5e1; margin-top:1rem;">
-              <li><i class="fas fa-check-circle" style="color:var(--accent);"></i> Precision & quality</li>
-              <li><i class="fas fa-check-circle" style="color:var(--accent);"></i> User‑centric design</li>
-              <li><i class="fas fa-check-circle" style="color:var(--accent);"></i> Continuous learning</li>
-              <li><i class="fas fa-check-circle" style="color:var(--accent);"></i> Entrepreneurial spirit</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section id="services" class="section-white">
-    <div class="container">
-      <h2><i class="fas fa-briefcase"></i> Services</h2>
-      <div class="card-grid">
-        <div class="card card-dark reveal"><i class="fas fa-store"></i><h3>Business Websites</h3><p>Professional, fast, and trustworthy.</p></div>
-        <div class="card card-dark reveal"><i class="fas fa-flag-checkered"></i><h3>Landing Pages</h3><p>Conversion‑focused, mobile‑optimized.</p></div>
-        <div class="card card-dark reveal"><i class="fas fa-paint-brush"></i><h3>Redesign & UI</h3><p>Modern, accessible makeover.</p></div>
-        <div class="card card-dark reveal"><i class="fas fa-shopping-cart"></i><h3>E‑commerce</h3><p>Secure stores, seamless checkout.</p></div>
-        <div class="card card-dark reveal"><i class="fas fa-magnifying-glass-chart"></i><h3>SEO & Performance</h3><p>Audits, speed, rankings.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WORK / PROJECTS (with clickable links) -->
-  <section id="work" class="section-white">
-    <div class="container">
-      <h2><i class="fas fa-folder-open"></i> Featured Work</h2>
-      <div class="card-grid">
-        <!-- Project 1: Portfolio -->
-        <div class="card card-dark reveal">
-          <i class="fas fa-user"></i>
-          <h3>Personal Portfolio</h3>
-          <p>Main portfolio site, sleek and responsive.</p>
-          <div style="margin-top: auto; display: flex; gap: 0.8rem;">
-            <a href="https://vyankatesh2002.github.io/" target="_blank" class="btn btn-outline">Live Demo <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <!-- Project 2: Prabhune Diamonds -->
-        <div class="card card-dark reveal">
-          <i class="fas fa-gem"></i>
-          <h3>Prabhune Diamonds</h3>
-          <p>Jewelry brand · 40% increase in engagement.</p>
-          <div style="margin-top: auto;">
-            <a href="https://prabhunediamond.com/" target="_blank" class="btn btn-outline">Visit Website <i class="fas fa-external-link-alt"></i></a>
-          </div>
-        </div>
-        <!-- Project 3: Calculator -->
-        <div class="card card-dark reveal">
-          <i class="fas fa-calculator"></i>
-          <h3>Calculator</h3>
-          <p>Clean, real‑time calculation demo.</p>
-          <div style="margin-top: auto; display: flex; gap: 0.8rem; flex-wrap: wrap;">
-            <a href="https://vyankatesh2002.github.io/Calculator/" target="_blank" class="btn btn-outline">Live Demo</a>
-       
-          </div>
-        </div>
-        <!-- Project 4: To-Do List -->
-        <div class="card card-dark reveal">
-          <i class="fas fa-list-check"></i>
-          <h3>To‑Do Pro</h3>
-          <p>Task manager with local storage demo.</p>
-          <div style="margin-top: auto; display: flex; gap: 0.8rem; flex-wrap: wrap;">
-            <a href="https://vyankatesh2002.github.io/To-Do-List/" target="_blank" class="btn btn-outline">Live Demo</a>
-        
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CAREER & RESUME SECTION -->
-  <section id="career" class="section-dark">
-    <div class="container">
-      <h2><i class="fas fa-file-alt"></i> Career & Resume</h2>
-      <div class="career-grid reveal">
-        <!-- LEFT: Personal + Objective + Education -->
-        <div class="personal-card">
-          <h3 style="color:white; margin-bottom:1.5rem;"><i class="fas fa-user-circle"></i> Vyankatesh Vivekanand Jaware</h3>
-          <p style="color:#cbd5e1; margin-bottom:1.8rem;"><i class="fas fa-map-marker-alt"></i> At Antri, Ta Motala, Dist. Buldhana, Maharashtra</p>
-          
-          <div style="margin-bottom:2rem;">
-            <h4 style="color:var(--vynora);"><i class="fas fa-bullseye"></i> Career Objective</h4>
-            <p style="color:#e0e0e0; margin-top:0.5rem;">To work in a professional and growth-driven environment where I can apply my technical skills and knowledge effectively, contribute to organizational success, and continuously improve myself.</p>
-          </div>
-          
-          <div style="margin-bottom:2rem;">
-            <h4 style="color:var(--vynora);"><i class="fas fa-graduation-cap"></i> Education</h4>
-            <ul style="list-style:none; color:#ddd;">
-              <li style="margin-bottom:1rem;"><strong>B.Sc Computer Science (AI, ML & VR)</strong> — Ongoing<br><span style="color:#9ca3af;">Sandip University, Nashik (2024)</span></li>
-              <li style="margin-bottom:1rem;"><strong>Diploma in Pharmacy (D.Pharmacy)</strong><br><span style="color:#9ca3af;">Jijamata College of Pharmacy, Sarati · Jan 2021 – Mar 2024 · 54.80%</span></li>
-              <li><strong>Higher Secondary (12th)</strong><br><span style="color:#9ca3af;">Saraswati Madhyamik Vidyalay, Sundarkhed · 2018–2020 · 55.54%</span></li>
-            </ul>
-          </div>
-          
           <div>
-            <h4 style="color:var(--vynora);"><i class="fas fa-heart"></i> Hobbies & Languages</h4>
-            <p style="color:#ddd;">Reading · Music · Traveling · Rooming · Motivated</p>
-            <p style="color:#ddd; margin-top:0.8rem;"><strong>Languages:</strong> Marathi, English, Hindi</p>
-            <p style="color:#ddd;"><strong>DOB:</strong> 17th April 2002</p>
-          </div>
-        </div>
-
-        <!-- RIGHT: Work Experience, Projects, Skills, Declaration -->
-        <div class="personal-card">
-          <h4 style="color:var(--vynora);"><i class="fas fa-briefcase"></i> Work Experience</h4>
-          <div class="exp-item">
-            <div class="exp-title">Quality Control Officer</div>
-            <div class="exp-sub">Agio Pharmaceuticals Pvt. Ltd. · Feb 2023 – May 2024</div>
-            <ul style="color:#ccc; margin-left:1.2rem;">
-              <li>Quality testing of raw materials & finished products</li>
-              <li>GMP compliance and documentation</li>
-            </ul>
-          </div>
-          <div class="exp-item">
-            <div class="exp-title">Quality Control Trainee</div>
-            <div class="exp-sub">Tata Autocomp Systems Pvt. Ltd. · Jan 2021 – July 2021</div>
-            <ul style="color:#ccc; margin-left:1.2rem;">
-              <li>Quality checks, dashboards & reports</li>
-            </ul>
-          </div>
-
-          <h4 style="color:var(--vynora); margin-top:2rem;"><i class="fas fa-code-branch"></i> Projects</h4>
-          <div style="margin-bottom:1rem; display: flex; flex-wrap: wrap; gap: 0.8rem;">
-            <a href="https://vyankatesh2002.github.io/" target="_blank" class="project-link">Portfolio</a>
-            <a href="https://prabhunediamond.com/" target="_blank" class="project-link">Prabhune Diamonds</a>
-            <a href="https://vyankatesh2002.github.io/Calculator/" target="_blank" class="project-link">Calculator</a>
-            <a href="https://vyankatesh2002.github.io/To-Do-List/" target="_blank" class="project-link">To-Do List</a>
-          </div>
-          <p style="color:#ddd;"><strong>Vandvik AI Assistant</strong> — Personal project, AI & Web Development focus.</p>
-
-          <h4 style="color:var(--vynora); margin-top:2rem;"><i class="fas fa-cogs"></i> Skills</h4>
-          <div class="skill-items">
-            <span class="skill-item">HTML5</span><span class="skill-item">CSS3</span><span class="skill-item">JavaScript</span>
-            <span class="skill-item">Blender (Learning)</span><span class="skill-item">Git/GitHub</span><span class="skill-item">SEO</span>
-          </div>
-          <p style="color:#ccc; margin-top:1rem;"><strong>Soft Skills:</strong> Communication, Teamwork, Problem-solving, Adaptability</p>
-
-          <div style="margin-top:2rem; border-top:1px solid #3a3a50; padding-top:1.5rem;">
-            <p style="color:#aaa; font-style:italic;"><i class="fas fa-check-circle" style="color:var(--accent);"></i> Declaration: I hereby declare that all the information provided above is true and correct to the best of my knowledge and belief.</p>
+            <h3 class="text-2xl font-bold mb-6 gradient-text" data-aos="fade-up"><i class="fas fa-briefcase mr-2"
+                aria-hidden="true"></i> Experience</h3>
+            <div class="space-y-6">
+              <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="100"><span
+                  class="text-sm font-semibold text-purple-500">Present · Night Shift</span>
+                <h4 class="text-lg font-semibold mt-1">Pharmacist (Part-Time)</h4>
+                <p class="text-sm font-medium text-gray-500">Green Plus Pharmacy</p>
+                <p class="text-sm mt-2 text-gray-600">Manage night operations, dispense medications, and ensure patient
+                  safety – while studying AI during the day.</p>
+              </article>
+              <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="150"><span
+                  class="text-sm font-semibold text-primary-500">Feb 2023 – May 2024 · 1.5 Years</span>
+                <h4 class="text-lg font-semibold mt-1">Quality Control Associate</h4>
+                <p class="text-sm font-medium text-gray-500">Agio Pharmaceuticals Pvt. Ltd.</p>
+                <ul class="mt-4 space-y-2 text-sm text-gray-600">
+                  <li><i class="fas fa-check-circle text-green-500 mr-2" aria-hidden="true"></i> Raw material analysis
+                    &amp; testing</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2" aria-hidden="true"></i> Quality documentation
+                    &amp; SOPs</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2" aria-hidden="true"></i> GMP compliance</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2" aria-hidden="true"></i> Analytical thinking
+                    &amp; problem solving</li>
+                  <li><i class="fas fa-check-circle text-green-500 mr-2" aria-hidden="true"></i> Professional discipline
+                    &amp; teamwork</li>
+                </ul>
+              </article>
+              <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="200"><span
+                  class="text-sm font-semibold text-accent-500">2024 – Present</span>
+                <h4 class="text-lg font-semibold mt-1">Software Development Journey</h4>
+                <p class="text-sm text-gray-600">Self-taught frontend &amp; AI skills while balancing night shifts.
+                  Building real projects, contributing to GitHub.</p>
+              </article>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- VYNORA -->
-  <section id="vynora" class="section-dark">
-    <div class="container">
-      <h2><i class="fas fa-shield-heart"></i> Ride with confidence.</h2>
-      <div class="vynora-block reveal">
-        <div class="vynora-grid">
-          <div>
-            <span class="vynora-badge"><i class="fas fa-motorcycle"></i> VYNORA · PREMIUM RIDES</span>
-            <p style="font-size:1.2rem; color:#f0f0f0;">Trusted bike rides in Nashik — pay after ride, women‑friendly. Helmet & sanitized, 350+ happy rides.</p>
-            <ul style="color:#ddd; margin:1.5rem 0; list-style:none;">
-              <li><i class="fas fa-route"></i> Custom plans · City: ₹399–699 · Day: ₹999–1499</li>
-              <li><i class="fas fa-clock"></i> Punctual, safe, and smooth.</li>
-            </ul>
-            <a href="https://wa.me/919960340222" class="btn btn-vynora"><i class="fab fa-whatsapp"></i> Book via WhatsApp</a>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50" aria-label="Contact">
+      <div class="container mx-auto px-6 max-w-6xl">
+        <h2 class="font-heading text-4xl font-bold mb-12 text-center" data-aos="fade-up">Get In Touch</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div class="glass-card p-8 rounded-3xl" data-aos="fade-right">
+            <h3 class="text-2xl font-semibold mb-6 flex items-center gap-2 text-gray-900"><i
+                class="fas fa-paper-plane text-primary-500" aria-hidden="true"></i> Send a Message</h3>
+            <form id="contactForm" class="space-y-5" novalidate>
+              <div><input type="text" name="name" placeholder="Your Name" required
+                  class="w-full bg-transparent border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-primary-500" />
+              </div>
+              <div><input type="email" name="email" placeholder="Email Address" required
+                  class="w-full bg-transparent border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-primary-500" />
+              </div>
+              <div><textarea name="message" placeholder="Your Message" rows="5" required
+                  class="w-full bg-transparent border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-primary-500"></textarea>
+              </div>
+              <button type="submit"
+                class="bg-primary-500 hover:bg-primary-600 text-white w-full py-3 rounded-full font-semibold transition inline-flex items-center justify-center gap-2"><i
+                  class="fas fa-paper-plane" aria-hidden="true"></i> Send Message</button>
+            </form>
           </div>
-          <div style="text-align:center;">
-            <i class="fas fa-motorcycle" style="font-size:5rem; color:var(--vynora);"></i>
-            <h3 style="color:white;">Vynora Premium</h3>
-            <p style="color:#ddd;">“Not just a ride — an experience.”</p>
+          <div class="glass-card p-8 rounded-3xl flex flex-col justify-center" data-aos="fade-left">
+            <h3 class="text-2xl font-semibold mb-6 flex items-center gap-2 text-gray-900"><i
+                class="fas fa-address-card text-purple-500" aria-hidden="true"></i> Contact Info</h3>
+            <div class="space-y-4 text-gray-700">
+              <p><i class="fas fa-envelope text-primary-500 w-6" aria-hidden="true"></i> vyankateshvjaware2002@gmail.com
+              </p>
+              <p><i class="fas fa-phone text-primary-500 w-6" aria-hidden="true"></i> +91 99603 40222</p>
+              <p><i class="fas fa-map-marker-alt text-primary-500 w-6" aria-hidden="true"></i> Nashik, Maharashtra,
+                India</p>
+              <p><i class="fab fa-github text-primary-500 w-6" aria-hidden="true"></i> github.com/vyankatesh2002</p>
+              <p><i class="fab fa-linkedin text-primary-500 w-6" aria-hidden="true"></i>
+                linkedin.com/in/vyankatesh-jaware</p>
+              <div class="flex items-center gap-2 mt-4"><span class="w-3 h-3 rounded-full bg-green-500"
+                  aria-hidden="true"></span><span class="text-green-600 font-medium">Available for Internship</span>
+              </div>
+            </div>
+            <div class="mt-6 rounded-xl overflow-hidden" style="height:192px;">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3746985.524464512!2d73.712479!3d20.006347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddf8b0c0c0c0c0%3A0x0!2zMjDCsDAwJzIyLjkiTiA3M8KwNDInNDQuOSJF!5e0!3m2!1sen!2sin!4v1620000000000"
+                width="100%" height="100%" allowfullscreen="" loading="lazy"
+                title="Google Maps location of Nashik, Maharashtra"></iframe>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- TESTIMONIALS -->
-  <section id="testimonials" class="section-dark">
-    <div class="container">
-      <h2><i class="fas fa-comment-dots"></i> What Clients Say</h2>
-      <div class="testimonials-grid">
-        <div class="card card-dark reveal"><i class="fas fa-quote-left"></i><p>"Vyankatesh built our jewelry site. Professional, fast."</p><strong>— Rohan P.</strong></div>
-        <div class="card card-dark reveal"><i class="fas fa-quote-left"></i><p>"Redesign increased inquiries. Clean code."</p><strong>— Sneha P.</strong></div>
-        <div class="card card-dark reveal"><i class="fas fa-quote-left" style="color:var(--vynora);"></i><p>"Vynora ride smooth, safe, punctual!"</p><strong>— Neha S.</strong></div>
+  <!-- Footer -->
+  <footer class="py-10 border-t border-gray-200/20">
+    <div class="container mx-auto px-6 text-center">
+      <p class="text-lg font-bold gradient-text mb-2 font-heading">Vyankatesh Jaware</p>
+      <p class="text-sm text-gray-500">AI Engineer &amp; Full-Stack Developer</p>
+      <div class="flex justify-center gap-6 mt-4 text-xl text-gray-400">
+        <a href="https://github.com/vyankatesh2002" target="_blank" rel="noopener noreferrer"
+          class="hover:text-primary-500 transition" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/vyankatesh-jaware-0397a325a" target="_blank" rel="noopener noreferrer"
+          class="hover:text-primary-500 transition" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/vyankatesh_jaware" target="_blank" rel="noopener noreferrer"
+          class="hover:text-primary-500 transition" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:vyankateshvjaware2002@gmail.com" class="hover:text-primary-500 transition" aria-label="Email"><i
+            class="fas fa-envelope"></i></a>
       </div>
+      <p class="text-xs mt-6 text-gray-400">&copy; 2026 Vyankatesh Jaware. All rights reserved.</p>
     </div>
-  </section>
+  </footer>
 
-  <!-- SKILLS & PROCESS (condensed) -->
-  <section id="skills" class="section-white">
-    <div class="container">
-      <div class="two-col-grid">
-        <div class="card reveal">
-          <h3><i class="fas fa-code"></i> Tech Stack</h3>
-          <div class="skill-items"><span class="skill-item">HTML5</span><span class="skill-item">CSS3</span><span class="skill-item">JavaScript</span><span class="skill-item">Git</span><span class="skill-item">Figma</span></div>
-        </div>
-        <div class="card reveal">
-          <h3><i class="fas fa-diagram-project"></i> Process</h3>
-          <ul class="timeline-detailed"><li>🔍 Discovery</li><li>🎨 Prototyping</li><li>⚙️ Development</li><li>🚀 Launch</li></ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section-dark">
-    <div class="container">
-      <h2><i class="fas fa-paper-plane"></i> Get in touch</h2>
-      <div class="contact-grid">
-        <div class="contact-info-card reveal">
-          <h3><i class="fas fa-address-card"></i> Let's connect</h3>
-          <div class="contact-detail-item">
-            <i class="fab fa-whatsapp" style="color:#25D366;"></i>
-            <div><div class="label">WhatsApp / Call</div><div class="value"><a href="https://wa.me/919960340222">+91 99603 40222</a> · <a href="tel:+919960340222">Tap to call</a></div></div>
-          </div>
-          <div class="contact-detail-item">
-            <i class="fas fa-envelope"></i>
-            <div><div class="label">Email</div><div class="value"><a href="mailto:vyankateshvjaware9960@gmail.com">vyankateshvjaware9960@gmail.com</a></div></div>
-          </div>
-          <div class="contact-detail-item">
-            <i class="fas fa-map-marker-alt" style="color:var(--vynora);"></i>
-            <div><div class="label">Location</div><div class="value">Nashik / Buldhana, Maharashtra</div></div>
-          </div>
-        </div>
-        <div class="card card-dark form-card reveal">
-          <h3>Send a message</h3>
-          <form id="contactForm">
-            <input class="form-control" id="contactName" placeholder="Full Name *" required>
-            <input type="email" class="form-control" id="contactEmail" placeholder="Email *" required style="margin-top:1rem;">
-            <input class="form-control" id="contactSubject" placeholder="Subject" style="margin-top:1rem;">
-            <textarea rows="4" class="form-control" id="contactMessage" placeholder="Your message..." style="margin-top:1rem;"></textarea>
-            <button type="submit" class="btn btn-primary" style="width:100%; background:var(--accent); color:white; margin-top:1.5rem;">Send via Email</button>
-            <p id="formFeedback" style="margin-top:1rem;"></p>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="footer">
-  <div class="footer-grid">
-    <div><h3 style="color:white;">Vyankatesh Jaware</h3><p>Web solutions & Vynora rides.</p></div>
-    <div><h4>Quick Links</h4><ul><li><a href="#home">Home</a></li><li><a href="#career">Career</a></li><li><a href="#vynora">Vynora</a></li></ul></div>
-    <div><h4>Contact</h4><ul><li><a href="tel:+919960340222">+91 9960340222</a></li><li><a href="mailto:vyankateshvjaware9960@gmail.com">vyankateshvjaware9960@gmail.com</a></li></ul></div>
-  </div>
-  <div class="footer-bottom">© 2026 Vyankatesh Jaware — Web Solutions & Vynora Premium Rides.</div>
-</footer>
-
-<a href="#home" class="scroll-top" id="scrollTopBtn"><i class="fas fa-chevron-up"></i></a>
-
-<!-- MODALS -->
-<div class="modal-overlay" id="calcModal">
-  <div class="modal-card">
-    <div style="display: flex; justify-content: space-between; align-items: center;">
-      <h3>Calculator</h3>
-      <button class="close-modal" id="closeCalcModal" style="background:none;border:none;color:white;font-size:1.8rem;cursor:pointer;">&times;</button>
-    </div>
-    <input type="text" id="calcScreen" class="calc-screen" readonly value="0">
-    <div class="calc-buttons" id="calcButtons"></div>
-  </div>
-</div>
-<div class="modal-overlay" id="todoModal">
-  <div class="modal-card">
-    <div style="display: flex; justify-content: space-between; align-items: center;">
-      <h3>To-Do Demo</h3>
-      <button class="close-modal" id="closeTodoModal" style="background:none;border:none;color:white;font-size:1.8rem;cursor:pointer;">&times;</button>
-    </div>
-    <div style="display: flex; gap: 0.5rem; margin: 1rem 0;">
-      <input type="text" id="demoTodoInput" placeholder="Add a task..." style="flex:1; padding:0.8rem; border-radius:20px; border:none; background:#2a2a3c; color:white;">
-      <button id="demoAddTodo" class="btn btn-primary" style="padding:0.8rem 1.2rem;">Add</button>
-    </div>
-    <ul id="demoTodoList" style="list-style:none; max-height:200px; overflow-y:auto;"></ul>
-  </div>
-</div>
-
-<script src="js/script.js">
-</script>
+  <!-- Scripts (at bottom so DOM is ready) -->
+  <script src="js/script.js"></script>
+  <script src="js/index.js"></script>
 </body>
+
 </html>

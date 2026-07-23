@@ -1,0 +1,15 @@
+/* ============================================================
+   SKILLS PAGE STYLES
+   ============================================================ */
+
+/* ----- Skill Tags ----- */
+.skill-tag {
+  transition: all 0.2s ease;
+  cursor: default;
+}
+
+.skill-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+

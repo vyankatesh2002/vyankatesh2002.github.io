@@ -1,0 +1,70 @@
+/* ============================================================
+   ABOUT PAGE STYLES
+   ============================================================ */
+
+/* ----- Timeline ----- */
+.timeline {
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background: linear-gradient(180deg, #2563EB, #7C3AED, #06B6D4);
+  border-radius: 3px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 12px;
+  top: 8px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 12px rgba(37, 99, 235, 0.5);
+}
+
+.timeline-dot-glow {
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.8);
+}
+
+/* ----- Circular Progress ----- */
+.circular-progress {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: conic-gradient(#2563EB var(--percent), #e2e8f0 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  position: relative;
+  margin: 0 auto 0.5rem;
+}
+
+.circular-progress::before {
+  content: '';
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--bg);
+  position: absolute;
+}
+
+.circular-progress span {
+  position: relative;
+  z-index: 2;
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 768px) {
+  .timeline::before { left: 12px; }
+  .timeline-dot { left: 4px; }
+}
+

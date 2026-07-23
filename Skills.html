@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Skills of Vyankatesh Jaware – AI Engineer, Frontend Developer, Python Developer." />
+    <meta name="author" content="Vyankatesh Jaware" />
+    <meta property="og:title" content="Skills | Vyankatesh Jaware" />
+    <meta property="og:description" content="Explore the technical and professional skills of Vyankatesh Jaware." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vyankatesh2002.github.io/skills" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Skills · Vyankatesh Jaware</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class', theme: { extend: { fontFamily: { heading: ['Poppins', 'sans-serif'], body: ['Inter', 'sans-serif'] }, colors: { primary: { 400: '#3B82F6', 500: '#2563EB', 600: '#1D4ED8' }, accent: { 400: '#06B6D4', 500: '#06B6D4' }, purple: { 500: '#7C3AED', 600: '#6D28D9' } } } } }</script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+</head>
+
+<body class="font-body">
+    <canvas id="particles-canvas" aria-hidden="true"></canvas>
+    <div id="scroll-progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+    <nav class="sticky top-0 z-50 glass border-b border-gray-200/20" aria-label="Main navigation">
+        <div class="container mx-auto px-6 flex items-center justify-between py-4">
+            <a href="index.html" class="text-2xl font-bold gradient-text"
+                style="font-family:'Poppins',sans-serif;">VJ</a>
+            <div class="hidden lg:flex items-center gap-8">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="About.html" class="nav-link">About</a>
+                <a href="Skills.html" class="nav-link-active">Skills</a>
+                <a href="Project.html" class="nav-link">Projects</a>
+                <a href="Experince.html" class="nav-link">Experience</a>
+                <a href="Contact.html" class="nav-link">Contact</a>
+                <button id="theme-toggle" class="nav-link text-xl" aria-label="Toggle theme"><i
+                        class="fas fa-moon"></i></button>
+                <a href="Resume.html"
+                    class="bg-primary-500 hover:bg-primary-600 text-white px-5 py-2 rounded-full font-medium transition">Resume</a>
+            </div>
+            <button id="mobile-toggle" class="lg:hidden text-2xl" aria-label="Toggle mobile menu"
+                aria-expanded="false"><i class="fas fa-bars"></i></button>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden glass p-6 flex flex-col gap-4 bg-white/90" role="navigation"
+            aria-label="Mobile navigation">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="About.html" class="nav-link">About</a>
+            <a href="Skills.html" class="nav-link-active">Skills</a>
+            <a href="Project.html" class="nav-link">Projects</a>
+            <a href="Experince.html" class="nav-link">Experience</a>
+            <a href="Contact.html" class="nav-link">Contact</a>
+            <a href="Resume.html" class="bg-primary-500 text-white py-2 rounded-full text-center">Resume</a>
+        </div>
+    </nav>
+    <main>
+        <section class="min-h-[50vh] flex items-center justify-center relative pt-24 pb-16" aria-label="Skills hero">
+            <div class="container mx-auto px-6 text-center">
+                <p class="text-primary-500 text-lg font-semibold mb-2" data-aos="fade-up">SKILLS &amp; EXPERTISE</p>
+                <h1 class="text-5xl lg:text-6xl font-extrabold mb-4 gradient-text"
+                    style="font-family:'Poppins',sans-serif;" data-aos="fade-up" data-aos-delay="100">What I Bring to
+                    the Table</h1>
+                <p class="text-xl max-w-2xl mx-auto" style="color:var(--text-dim);" data-aos="fade-up"
+                    data-aos-delay="200">A growing tech stack combined with strong professional discipline.</p>
+            </div>
+        </section>
+        <section class="py-20">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <article class="glass-card p-6 rounded-2xl" data-aos="fade-up">
+                        <h3 class="text-xl font-semibold mb-4 flex items-center gap-2"><i
+                                class="fas fa-code text-primary-500" aria-hidden="true"></i> Programming</h3>
+                        <div class="flex flex-wrap gap-2"><span
+                                class="skill-tag bg-blue-50 text-primary-600 px-3 py-1 rounded-full text-sm">Python</span><span
+                                class="skill-tag bg-blue-50 text-primary-600 px-3 py-1 rounded-full text-sm">C++</span><span
+                                class="skill-tag bg-blue-50 text-primary-600 px-3 py-1 rounded-full text-sm">JavaScript</span><span
+                                class="skill-tag bg-blue-50 text-primary-600 px-3 py-1 rounded-full text-sm">SQL</span>
+                        </div>
+                    </article>
+                    <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="50">
+                        <h3 class="text-xl font-semibold mb-4 flex items-center gap-2"><i
+                                class="fas fa-desktop text-accent-500" aria-hidden="true"></i> Frontend</h3>
+                        <div class="flex flex-wrap gap-2"><span
+                                class="skill-tag bg-cyan-50 text-accent-600 px-3 py-1 rounded-full text-sm">HTML5</span><span
+                                class="skill-tag bg-cyan-50 text-accent-600 px-3 py-1 rounded-full text-sm">CSS3</span><span
+                                class="skill-tag bg-cyan-50 text-accent-600 px-3 py-1 rounded-full text-sm">JavaScript</span><span
+                                class="skill-tag bg-cyan-50 text-accent-600 px-3 py-1 rounded-full text-sm">Tailwind</span><span
+                                class="skill-tag bg-cyan-50 text-accent-600 px-3 py-1 rounded-full text-sm">React
+                                (Learning)</span></div>
+                    </article>
+                    <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="text-xl font-semibold mb-4 flex items-center gap-2"><i
+                                class="fas fa-server text-purple-500" aria-hidden="true"></i> Backend</h3>
+                        <div class="flex flex-wrap gap-2"><span
+                                class="skill-tag bg-purple-50 text-purple-600 px-3 py-1 rounded-full text-sm">Node.js</span><span
+                                class="skill-tag bg-purple-50 text-purple-600 px-3 py-1 rounded-full text-sm">Express.js</span><span
+                                class="skill-tag bg-purple-50 text-purple-600 px-3 py-1 rounded-full text-sm">FastAPI
+                                (Learning)</span></div>
+                    </article>
+                    <article class="glass-card p-6 rounded-2xl" data-aos="fade-up">
+                        <h3 class="text-xl font-semibold mb-4 flex items-center gap-2"><i
+                                class="fas fa-database text-green-500" aria-hidden="true"></i> Database</h3>
+                        <div class="flex flex-wrap gap-2"><span
+                                class="skill-tag bg-green-50 text-green-600 px-3 py-1 rounded-full text-sm">MongoDB</span><span
+                                class="skill-tag bg-green-50 text-green-600 px-3 py-1 rounded-full text-sm">PostgreSQL</span><span
+                                class="skill-tag bg-green-50 text-green-600 px-3 py-1 rounded-full text-sm">Firebase</span><span
+                                class="skill-tag bg-green-50 text-green-600 px-3 py-1 rounded-full text-sm">Supabase</span>
+                        </div>
+                    </article>
+                    <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="50">
+                        <h3 class="text-xl font-semibold mb-4 flex items-center gap-2"><i
+                                class="fas fa-brain text-yellow-500" aria-hidden="true"></i> AI / Machine Learning</h3>
+                        <div class="flex flex-wrap gap-2"><span
+                                class="skill-tag bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full text-sm">NumPy</span><span
+                                class="skill-tag bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full text-sm">Pandas</span><span
+                                class="skill-tag bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full text-sm">Scikit-Learn</span><span
+                                class="skill-tag bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full text-sm">TensorFlow</span><span
+                                class="skill-tag bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full text-sm">PyTorch</span><span
+                                class="skill-tag bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full text-sm">OpenCV</span><span
+                                class="skill-tag bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full text-sm">HuggingFace</span>
+                        </div>
+                    </article>
+                    <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="text-xl font-semibold mb-4 flex items-center gap-2"><i
+                                class="fas fa-cloud text-sky-500" aria-hidden="true"></i> Cloud &amp; DevOps</h3>
+                        <div class="flex flex-wrap gap-2"><span
+                                class="skill-tag bg-sky-50 text-sky-600 px-3 py-1 rounded-full text-sm">Git</span><span
+                                class="skill-tag bg-sky-50 text-sky-600 px-3 py-1 rounded-full text-sm">GitHub</span><span
+                                class="skill-tag bg-sky-50 text-sky-600 px-3 py-1 rounded-full text-sm">Docker</span><span
+                                class="skill-tag bg-sky-50 text-sky-600 px-3 py-1 rounded-full text-sm">AWS</span><span
+                                class="skill-tag bg-sky-50 text-sky-600 px-3 py-1 rounded-full text-sm">Vercel</span>
+                        </div>
+                    </article>
+                    <article class="glass-card p-6 rounded-2xl" data-aos="fade-up">
+                        <h3 class="text-xl font-semibold mb-4 flex items-center gap-2"><i
+                                class="fas fa-star text-purple-500" aria-hidden="true"></i> Professional</h3>
+                        <div class="flex flex-wrap gap-2"><span
+                                class="skill-tag bg-purple-50 text-purple-600 px-3 py-1 rounded-full text-sm">Problem
+                                Solving</span><span
+                                class="skill-tag bg-purple-50 text-purple-600 px-3 py-1 rounded-full text-sm">Communication</span><span
+                                class="skill-tag bg-purple-50 text-purple-600 px-3 py-1 rounded-full text-sm">Self
+                                Learning</span><span
+                                class="skill-tag bg-purple-50 text-purple-600 px-3 py-1 rounded-full text-sm">Teamwork</span><span
+                                class="skill-tag bg-purple-50 text-purple-600 px-3 py-1 rounded-full text-sm">Time
+                                Management</span><span
+                                class="skill-tag bg-purple-50 text-purple-600 px-3 py-1 rounded-full text-sm">Adaptability</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="py-20">
+            <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+                <h2 class="text-4xl font-bold mb-6 gradient-text" style="font-family:'Poppins',sans-serif;">Ready to put
+                    these skills to work?</h2>
+                <p class="text-lg mb-8" style="color:var(--text-dim);">I'm looking for opportunities to learn, grow, and
+                    contribute.</p>
+                <a href="Contact.html"
+                    class="bg-primary-500 hover:bg-primary-600 text-white px-8 py-3 rounded-full font-semibold transition inline-flex items-center gap-2"><i
+                        class="fas fa-paper-plane" aria-hidden="true"></i> Hire Me</a>
+            </div>
+        </section>
+    </main>
+    <footer class="py-10 border-t border-gray-200/20">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-lg font-bold gradient-text mb-2" style="font-family:'Poppins',sans-serif;">Vyankatesh Jaware
+            </p>
+            <p class="text-sm" style="color:var(--text-dim);">AI Engineer &amp; Full-Stack Developer</p>
+            <div class="flex justify-center gap-6 mt-4 text-xl" style="color:var(--text-dim);">
+                <a href="https://github.com/vyankatesh2002" target="_blank" rel="noopener noreferrer"
+                    class="hover:text-primary-500 transition" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/vyankatesh-jaware-0397a325a" target="_blank"
+                    rel="noopener noreferrer" class="hover:text-primary-500 transition" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/vyankatesh_jaware" target="_blank" rel="noopener noreferrer"
+                    class="hover:text-primary-500 transition" aria-label="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="mailto:vyankateshvjaware2002@gmail.com" class="hover:text-primary-500 transition"
+                    aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="text-xs mt-6" style="color:var(--text-dim);">&copy; 2026 Vyankatesh Jaware. All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/skills.js"></script>
+</body>
+
+</html>

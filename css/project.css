@@ -1,0 +1,21 @@
+/* ============================================================
+   PROJECT PAGE STYLES
+   ============================================================ */
+
+/* ----- Tech Badges ----- */
+.tech-badge {
+  transition: all 0.2s ease;
+  cursor: default;
+}
+
+.tech-badge:hover {
+  transform: translateY(-2px);
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 768px) {
+  .project-image {
+    height: 180px;
+  }
+}
+

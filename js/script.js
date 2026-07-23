@@ -1,155 +1,121 @@
- (function() {
-    // Sticky header
-    const header = document.getElementById('mainHeader');
-    window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 10));
+/**
+ * Shared JavaScript — Vyankatesh Jaware Portfolio
+ * Handles: Theme toggle, Mobile menu, AOS, Particles, Scroll progress
+ */
+(function () {
+  'use strict';
 
-    // Reveal animations
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('active'); });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  /* ----- Theme Toggle ----- */
+  const themeToggle = document.getElementById('theme-toggle');
+  const htmlEl = document.documentElement;
 
-    // Scroll to top button
-    const topBtn = document.getElementById('scrollTopBtn');
-    window.addEventListener('scroll', () => {
-      const show = window.scrollY > 400;
-      topBtn.style.opacity = show ? '1' : '0';
-      topBtn.style.visibility = show ? 'visible' : 'hidden';
-    });
-
-    // Mobile menu toggle
-    const menuBtn = document.querySelector('.mobile-menu-btn');
-    const nav = document.querySelector('.nav-links');
-    menuBtn.addEventListener('click', () => {
-      if (nav.style.display === 'flex') {
-        nav.style.display = '';
-        nav.removeAttribute('style');
-      } else {
-        nav.style.display = 'flex';
-        nav.style.flexDirection = 'column';
-        nav.style.position = 'absolute';
-        nav.style.top = '70px';
-        nav.style.left = '0';
-        nav.style.width = '100%';
-        nav.style.background = 'rgba(255,255,255,0.98)';
-        nav.style.padding = '1.5rem';
-        nav.style.backdropFilter = 'blur(8px)';
-        nav.style.zIndex = '998';
-      }
-    });
-
-    // Close mobile menu on link click (smooth scroll included)
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        if (window.innerWidth <= 900) nav.style.display = '';
-      });
-    });
-
-    // Smooth scroll for all anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        const href = this.getAttribute('href');
-        if (href === "#" || href === "") return;
-        const target = document.querySelector(href);
-        if (target) {
-          e.preventDefault();
-          window.scrollTo({ top: target.offsetTop - 80, behavior: 'smooth' });
-        }
-      });
-    });
-
-    // Modals
-    const calcModal = document.getElementById('calcModal');
-    const todoModal = document.getElementById('todoModal');
-    const closeCalc = document.getElementById('closeCalcModal');
-    const closeTodo = document.getElementById('closeTodoModal');
-
-    function openModal(modal) { modal.style.display = 'flex'; }
-    function closeModal(modal) { modal.style.display = 'none'; }
-
-    document.getElementById('calcDemoBtn').addEventListener('click', (e) => {
-      e.preventDefault();
-      openModal(calcModal);
-      buildCalc();
-    });
-    document.getElementById('todoDemoBtn').addEventListener('click', (e) => {
-      e.preventDefault();
-      openModal(todoModal);
-    });
-
-    closeCalc.addEventListener('click', () => closeModal(calcModal));
-    closeTodo.addEventListener('click', () => closeModal(todoModal));
-    window.addEventListener('click', (e) => {
-      if (e.target === calcModal) closeModal(calcModal);
-      if (e.target === todoModal) closeModal(todoModal);
-    });
-
-    // Calculator logic
-    let calcExp = '';
-    function buildCalc() {
-      const container = document.getElementById('calcButtons');
-      container.innerHTML = '';
-      const keys = ['7','8','9','/','4','5','6','*','1','2','3','-','0','.','=','+','C'];
-      keys.forEach(k => {
-        const btn = document.createElement('button');
-        btn.textContent = k;
-        btn.addEventListener('click', () => {
-          const screen = document.getElementById('calcScreen');
-          if (k === 'C') {
-            calcExp = '';
-            screen.value = '0';
-          } else if (k === '=') {
-            try {
-              const res = Function('"use strict";return (' + calcExp + ')')();
-              screen.value = res;
-              calcExp = res.toString();
-            } catch {
-              screen.value = 'Error';
-              calcExp = '';
-            }
-          } else {
-            if (calcExp === '' && screen.value === '0' && !isNaN(k)) calcExp = k;
-            else calcExp += k;
-            screen.value = calcExp;
-          }
-        });
-        container.appendChild(btn);
-      });
+  if (themeToggle) {
+    // Restore saved theme
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      htmlEl.setAttribute('data-theme', savedTheme);
+      themeToggle.innerHTML = savedTheme === 'dark'
+        ? '<i class="fas fa-sun"></i>'
+        : '<i class="fas fa-moon"></i>';
     }
 
-    // Simple Todo demo
-    const todoInput = document.getElementById('demoTodoInput');
-    const addBtn = document.getElementById('demoAddTodo');
-    const todoList = document.getElementById('demoTodoList');
-    addBtn.addEventListener('click', () => {
-      if (todoInput.value.trim()) {
-        const li = document.createElement('li');
-        li.textContent = todoInput.value;
-        li.style.padding = '0.5rem';
-        li.style.borderBottom = '1px solid #3a3a50';
-        li.style.color = '#ddd';
-        todoList.appendChild(li);
-        todoInput.value = '';
-      }
+    themeToggle.addEventListener('click', () => {
+      const isDark = htmlEl.getAttribute('data-theme') === 'dark';
+      const newTheme = isDark ? 'light' : 'dark';
+      htmlEl.setAttribute('data-theme', newTheme);
+      themeToggle.innerHTML = isDark
+        ? '<i class="fas fa-moon"></i>'
+        : '<i class="fas fa-sun"></i>';
+      localStorage.setItem('theme', newTheme);
     });
-    todoInput.addEventListener('keypress', (e) => { if(e.key==='Enter') addBtn.click(); });
+  }
 
-    // Contact form (mailto)
-    const form = document.getElementById('contactForm');
-    const fb = document.getElementById('formFeedback');
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const name = document.getElementById('contactName').value.trim();
-      const email = document.getElementById('contactEmail').value.trim();
-      const subject = document.getElementById('contactSubject').value.trim() || 'Project Inquiry';
-      const msg = document.getElementById('contactMessage').value.trim();
-      if (!name || !email) {
-        fb.innerHTML = '<span style="color:#f87171;">Name and email required.</span>';
-        return;
-      }
-      const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${msg}`;
-      window.location.href = `mailto:vyankateshvjaware9960@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
-      fb.innerHTML = '<span style="color:#4ade80;">✓ Opening email client...</span>';
-      form.reset();
+  /* ----- Mobile Menu Toggle ----- */
+  const mobileToggle = document.getElementById('mobile-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  if (mobileToggle && mobileMenu) {
+    mobileToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
     });
-  })();
+
+    // Close mobile menu on link click
+    mobileMenu.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  }
+
+  /* ----- AOS (Animate on Scroll) ----- */
+  if (typeof AOS !== 'undefined') {
+    AOS.init({ once: true, offset: 80 });
+  }
+
+  /* ----- Three.js Particles ----- */
+  const canvas = document.getElementById('particles-canvas');
+  if (canvas && typeof THREE !== 'undefined') {
+    const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setSize(window.innerWidth, window.innerHeight);
+
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(
+      75,
+      window.innerWidth / window.innerHeight,
+      0.1,
+      1000
+    );
+    camera.position.z = 30;
+
+    const geometry = new THREE.BufferGeometry();
+    const particleCount = 400;
+    const positions = new Float32Array(particleCount * 3);
+
+    for (let i = 0; i < particleCount * 3; i += 3) {
+      positions[i] = (Math.random() - 0.5) * 50;
+      positions[i + 1] = (Math.random() - 0.5) * 30;
+      positions[i + 2] = (Math.random() - 0.5) * 40;
+    }
+
+    geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+
+    const material = new THREE.PointsMaterial({
+      size: 0.12,
+      color: 0x2563eb,
+      blending: THREE.AdditiveBlending,
+      transparent: true,
+      opacity: 0.6,
+    });
+
+    const particleSystem = new THREE.Points(geometry, material);
+    scene.add(particleSystem);
+
+    function animateParticles() {
+      requestAnimationFrame(animateParticles);
+      particleSystem.rotation.y += 0.0003;
+      particleSystem.rotation.x += 0.0001;
+      renderer.render(scene, camera);
+    }
+
+    animateParticles();
+
+    window.addEventListener('resize', () => {
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+    });
+  }
+
+  /* ----- Scroll Progress Bar ----- */
+  const scrollProgress = document.getElementById('scroll-progress');
+  if (scrollProgress) {
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      scrollProgress.style.width = `${progress}%`;
+    });
+  }
+})();
+

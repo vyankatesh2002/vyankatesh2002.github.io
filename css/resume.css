@@ -1,0 +1,174 @@
+/* ============================================================
+   RESUME PAGE STYLES
+   ============================================================ */
+
+/* ----- Resume Container ----- */
+.resume-container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.resume-card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.gradient-bar {
+  height: 4px;
+  background: linear-gradient(90deg, #2563EB, #7C3AED, #06B6D4);
+  border-radius: 4px;
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+/* ----- Profile Image ----- */
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 8px 30px rgba(37, 99, 235, 0.2);
+  background: #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #94a3b8;
+}
+
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ----- Social Icons ----- */
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.04);
+  color: #64748b;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background: #2563EB;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+/* ----- Contact Items ----- */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #475569;
+  text-decoration: none;
+  transition: 0.2s;
+  font-size: 0.9rem;
+}
+
+.contact-item:hover { color: #2563EB; }
+
+.contact-item i {
+  width: 18px;
+  color: #2563EB;
+  font-size: 0.9rem;
+}
+
+/* ----- Section Title ----- */
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: 0.3px;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.section-title i {
+  color: #2563EB;
+  font-size: 1.1rem;
+}
+
+/* ----- Skill Tags (Resume) ----- */
+.skill-tag {
+  background: rgba(37, 99, 235, 0.08);
+  color: #1e293b;
+  padding: 0.3rem 0.9rem;
+  border-radius: 60px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: 1px solid rgba(37, 99, 235, 0.06);
+  transition: 0.2s;
+}
+
+.skill-tag:hover {
+  background: rgba(37, 99, 235, 0.15);
+}
+
+/* ----- Dark Mode Overrides ----- */
+[data-theme="dark"] .resume-card {
+  background: rgba(15, 23, 42, 0.92);
+  border-color: rgba(255, 255, 255, 0.06);
+}
+
+[data-theme="dark"] .section-title { color: #f1f5f9; }
+[data-theme="dark"] .contact-item { color: #cbd5e1; }
+[data-theme="dark"] .contact-item:hover { color: #60A5FA; }
+[data-theme="dark"] .contact-item i { color: #60A5FA; }
+
+[data-theme="dark"] .skill-tag {
+  background: rgba(96, 165, 250, 0.12);
+  color: #e2e8f0;
+  border-color: rgba(96, 165, 250, 0.1);
+}
+
+[data-theme="dark"] .skill-tag:hover {
+  background: rgba(96, 165, 250, 0.2);
+}
+
+[data-theme="dark"] .social-icon {
+  background: rgba(255, 255, 255, 0.06);
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .social-icon:hover {
+  background: #60A5FA;
+  color: #0f172a;
+}
+
+[data-theme="dark"] .profile-img {
+  border-color: #1e293b;
+  background: #1e293b;
+}
+
+/* ----- Print ----- */
+@media print {
+  .no-print { display: none !important; }
+  .resume-card {
+    box-shadow: none !important;
+    border: 1px solid #e2e8f0 !important;
+  }
+  body { background: white !important; }
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 768px) {
+  .profile-img { width: 110px; height: 110px; }
+  .resume-container { padding: 0 0.8rem; margin: 1rem auto; }
+}
+

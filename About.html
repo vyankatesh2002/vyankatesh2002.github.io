@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="About Vyankatesh Jaware – AI Engineer, Python Developer, Computer Science Student specializing in AI, ML & VR." />
+    <meta name="author" content="Vyankatesh Jaware" />
+    <meta property="og:title" content="About Vyankatesh Jaware | AI Engineer & Developer" />
+    <meta property="og:description"
+        content="Learn about Vyankatesh Jaware – his journey from Pharmacy to AI, skills, experience, and mission." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vyankatesh2002.github.io/about" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>About · Vyankatesh Jaware</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class', theme: { extend: { fontFamily: { heading: ['Poppins', 'sans-serif'], body: ['Inter', 'sans-serif'] }, colors: { primary: { 400: '#3B82F6', 500: '#2563EB', 600: '#1D4ED8' }, accent: { 400: '#06B6D4', 500: '#06B6D4' }, purple: { 500: '#7C3AED', 600: '#6D28D9' } } } } }
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/about.css" />
+</head>
+
+<body class="font-body">
+    <canvas id="particles-canvas" aria-hidden="true"></canvas>
+    <div id="scroll-progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+    <nav class="sticky top-0 z-50 glass border-b border-gray-200/20" aria-label="Main navigation">
+        <div class="container mx-auto px-6 flex items-center justify-between py-4">
+            <a href="index.html" class="text-2xl font-bold gradient-text"
+                style="font-family:'Poppins',sans-serif;">VJ</a>
+            <div class="hidden lg:flex items-center gap-8">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="About.html" class="nav-link-active">About</a>
+                <a href="Skills.html" class="nav-link">Skills</a>
+                <a href="Project.html" class="nav-link">Projects</a>
+                <a href="Experince.html" class="nav-link">Experience</a>
+                <a href="Contact.html" class="nav-link">Contact</a>
+                <button id="theme-toggle" class="nav-link text-xl" aria-label="Toggle theme"><i
+                        class="fas fa-moon"></i></button>
+                <a href="Resume.html"
+                    class="bg-primary-500 hover:bg-primary-600 text-white px-5 py-2 rounded-full font-medium transition">Resume</a>
+            </div>
+            <button id="mobile-toggle" class="lg:hidden text-2xl" aria-label="Toggle mobile menu"
+                aria-expanded="false"><i class="fas fa-bars"></i></button>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden glass p-6 flex flex-col gap-4 bg-white/90" role="navigation"
+            aria-label="Mobile navigation">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="About.html" class="nav-link-active">About</a>
+            <a href="Skills.html" class="nav-link">Skills</a>
+            <a href="Project.html" class="nav-link">Projects</a>
+            <a href="Experince.html" class="nav-link">Experience</a>
+            <a href="Contact.html" class="nav-link">Contact</a>
+            <a href="Resume.html" class="bg-primary-500 text-white py-2 rounded-full text-center">Resume</a>
+        </div>
+    </nav>
+    <main>
+        <section class="min-h-[70vh] flex items-center justify-center relative pt-24 pb-16" aria-label="About hero">
+            <div class="container mx-auto px-6 text-center">
+                <p class="text-primary-500 text-lg font-semibold mb-2" data-aos="fade-up">ABOUT ME</p>
+                <h1 class="text-5xl lg:text-7xl font-extrabold mb-4 gradient-text"
+                    style="font-family:'Poppins',sans-serif;" data-aos="fade-up" data-aos-delay="100">Turning Ideas into
+                    AI Solutions</h1>
+                <p class="text-2xl lg:text-3xl font-semibold mb-6" style="color:var(--text-dim);" data-aos="fade-up"
+                    data-aos-delay="200">Vyankatesh Vivekanand Jaware</p>
+                <p class="text-lg max-w-2xl mx-auto mb-8" style="color:var(--text-dim);" data-aos="fade-up"
+                    data-aos-delay="300">AI Engineer · Python Developer · AI Research Enthusiast</p>
+                <div data-aos="fade-up" data-aos-delay="400">
+                    <a href="Resume.html" download
+                        class="bg-primary-500 hover:bg-primary-600 text-white px-8 py-3 rounded-full font-semibold transition inline-flex items-center gap-2"><i
+                            class="fas fa-download" aria-hidden="true"></i> Download Resume</a>
+                </div>
+                <div class="mt-16 animate-bounce" data-aos="fade-up" data-aos-delay="600"><i
+                        class="fas fa-chevron-down text-2xl text-primary-400" aria-hidden="true"></i></div>
+            </div>
+        </section>
+        <section class="py-20" aria-label="My Story">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <h2 class="text-4xl font-bold mb-12 text-center gradient-text" style="font-family:'Poppins',sans-serif;"
+                    data-aos="fade-up">My Story</h2>
+                <div class="glass-card p-8 md:p-12 rounded-3xl" data-aos="fade-up">
+                    <p class="text-lg mb-6" style="color:var(--text-dim);">Hello! I'm <strong
+                            style="color:var(--text);">Vyankatesh Vivekanand Jaware</strong>, a Computer Science student
+                        specializing in <strong class="text-primary-500">Artificial Intelligence, Machine Learning, and
+                            Virtual Reality</strong> at Sandip University, Nashik.</p>
+                    <p class="text-lg mb-6" style="color:var(--text-dim);">Before entering Computer Science, I completed
+                        a <strong style="color:var(--text);">Diploma in Pharmacy</strong> from Jijamata College of
+                        Pharmacy and gained <strong class="text-primary-500">1.5 years of professional
+                            experience</strong> as a Quality Control Associate in the pharmaceutical industry.</p>
+                    <p class="text-lg" style="color:var(--text-dim);">Today, my mission is to combine <strong
+                            class="text-primary-500">Artificial Intelligence with Healthcare</strong> to create
+                        intelligent systems that solve real-world problems and improve people's lives.</p>
+                </div>
+            </div>
+        </section>
+        <section class="py-20 section-alt" aria-label="Professional Summary">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <h2 class="text-4xl font-bold mb-12 text-center gradient-text" style="font-family:'Poppins',sans-serif;"
+                    data-aos="fade-up">Professional Summary</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4" data-aos="fade-up">
+                    <article class="glass-card p-5 rounded-2xl text-center"><i
+                            class="fas fa-user text-2xl text-primary-500 mb-2" aria-hidden="true"></i>
+                        <p class="text-sm" style="color:var(--text-dim);">Name</p>
+                        <p class="font-semibold" style="color:var(--text);">Vyankatesh Jaware</p>
+                    </article>
+                    <article class="glass-card p-5 rounded-2xl text-center"><i
+                            class="fas fa-map-marker-alt text-2xl text-primary-500 mb-2" aria-hidden="true"></i>
+                        <p class="text-sm" style="color:var(--text-dim);">Location</p>
+                        <p class="font-semibold" style="color:var(--text);">Nashik, Maharashtra</p>
+                    </article>
+                    <article class="glass-card p-5 rounded-2xl text-center"><i
+                            class="fas fa-graduation-cap text-2xl text-primary-500 mb-2" aria-hidden="true"></i>
+                        <p class="text-sm" style="color:var(--text-dim);">Degree</p>
+                        <p class="font-semibold" style="color:var(--text);">B.Sc CS (AI/ML/VR)</p>
+                    </article>
+                    <article class="glass-card p-5 rounded-2xl text-center"><i
+                            class="fas fa-bullseye text-2xl text-primary-500 mb-2" aria-hidden="true"></i>
+                        <p class="text-sm" style="color:var(--text-dim);">Career Goal</p>
+                        <p class="font-semibold" style="color:var(--text);">AI Engineer</p>
+                    </article>
+                    <article class="glass-card p-5 rounded-2xl text-center"><i
+                            class="fas fa-language text-2xl text-primary-500 mb-2" aria-hidden="true"></i>
+                        <p class="text-sm" style="color:var(--text-dim);">Languages</p>
+                        <p class="font-semibold" style="color:var(--text);">English, Hindi, Marathi</p>
+                    </article>
+                    <article class="glass-card p-5 rounded-2xl text-center"><i
+                            class="fas fa-briefcase text-2xl text-primary-500 mb-2" aria-hidden="true"></i>
+                        <p class="text-sm" style="color:var(--text-dim);">Experience</p>
+                        <p class="font-semibold" style="color:var(--text);">1.5 Years QC</p>
+                    </article>
+                    <article class="glass-card p-5 rounded-2xl text-center"><i
+                            class="fas fa-flask text-2xl text-primary-500 mb-2" aria-hidden="true"></i>
+                        <p class="text-sm" style="color:var(--text-dim);">Previous Education</p>
+                        <p class="font-semibold" style="color:var(--text);">D. Pharmacy</p>
+                    </article>
+                    <article class="glass-card p-5 rounded-2xl text-center"><i
+                            class="fas fa-clock text-2xl text-green-500 mb-2" aria-hidden="true"></i>
+                        <p class="text-sm" style="color:var(--text-dim);">Availability</p>
+                        <p class="font-semibold text-green-600">Open for Internship</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="py-20" aria-label="Mission and Vision">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <h2 class="text-4xl font-bold mb-12 text-center gradient-text" style="font-family:'Poppins',sans-serif;"
+                    data-aos="fade-up">Mission &amp; Vision</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8" data-aos="fade-up">
+                    <article class="glass-card p-8 rounded-2xl text-center"><i
+                            class="fas fa-bullseye text-4xl text-primary-500 mb-4" aria-hidden="true"></i>
+                        <h3 class="text-xl font-semibold mb-3" style="color:var(--text);">Mission</h3>
+                        <p style="color:var(--text-dim);">To build intelligent AI solutions that improve healthcare,
+                            education, and society through practical innovation.</p>
+                    </article>
+                    <article class="glass-card p-8 rounded-2xl text-center"><i
+                            class="fas fa-eye text-4xl text-purple-500 mb-4" aria-hidden="true"></i>
+                        <h3 class="text-xl font-semibold mb-3" style="color:var(--text);">Vision</h3>
+                        <p style="color:var(--text-dim);">Become a world-class AI Engineer and entrepreneur, developing
+                            products that impact millions of lives.</p>
+                    </article>
+                    <article class="glass-card p-8 rounded-2xl text-center"><i
+                            class="fas fa-rocket text-4xl text-accent-500 mb-4" aria-hidden="true"></i>
+                        <h3 class="text-xl font-semibold mb-3" style="color:var(--text);">Goal</h3>
+                        <p style="color:var(--text-dim);">Master AI, work at global companies, and create AI-powered
+                            healthcare products that make a difference.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="py-20 section-alt" aria-label="Timeline">
+            <div class="container mx-auto px-6 max-w-3xl">
+                <h2 class="text-4xl font-bold mb-12 text-center gradient-text" style="font-family:'Poppins',sans-serif;"
+                    data-aos="fade-up">My Journey</h2>
+                <div class="timeline relative pl-16" data-aos="fade-up">
+                    <div class="relative mb-10">
+                        <div class="timeline-dot bg-primary-500"></div>
+                        <div class="glass-card p-5 rounded-2xl ml-4"><span
+                                class="text-primary-500 text-sm font-semibold">2002</span>
+                            <h4 class="text-lg font-semibold" style="color:var(--text);">Born</h4>
+                            <p style="color:var(--text-dim); font-size:0.9rem;">Started my journey in Maharashtra,
+                                India.</p>
+                        </div>
+                    </div>
+                    <div class="relative mb-10">
+                        <div class="timeline-dot bg-purple-500"></div>
+                        <div class="glass-card p-5 rounded-2xl ml-4"><span
+                                class="text-purple-500 text-sm font-semibold">2018-2020</span>
+                            <h4 class="text-lg font-semibold" style="color:var(--text);">Higher Secondary</h4>
+                            <p style="color:var(--text-dim); font-size:0.9rem;">Completed 12th grade with focus on
+                                science.</p>
+                        </div>
+                    </div>
+                    <div class="relative mb-10">
+                        <div class="timeline-dot bg-accent-500"></div>
+                        <div class="glass-card p-5 rounded-2xl ml-4"><span
+                                class="text-accent-500 text-sm font-semibold">2021-2024</span>
+                            <h4 class="text-lg font-semibold" style="color:var(--text);">Diploma in Pharmacy</h4>
+                            <p style="color:var(--text-dim); font-size:0.9rem;">Jijamata College of Pharmacy —
+                                foundation in healthcare & quality.</p>
+                        </div>
+                    </div>
+                    <div class="relative mb-10">
+                        <div class="timeline-dot bg-primary-500"></div>
+                        <div class="glass-card p-5 rounded-2xl ml-4"><span
+                                class="text-primary-500 text-sm font-semibold">2023-2024</span>
+                            <h4 class="text-lg font-semibold" style="color:var(--text);">Quality Control Associate</h4>
+                            <p style="color:var(--text-dim); font-size:0.9rem;">Agio Pharmaceuticals — 1.5 years of
+                                professional experience.</p>
+                        </div>
+                    </div>
+                    <div class="relative mb-10">
+                        <div class="timeline-dot bg-purple-500"></div>
+                        <div class="glass-card p-5 rounded-2xl ml-4"><span
+                                class="text-purple-500 text-sm font-semibold">2024-Present</span>
+                            <h4 class="text-lg font-semibold" style="color:var(--text);">B.Sc Computer Science (AI, ML,
+                                VR)</h4>
+                            <p style="color:var(--text-dim); font-size:0.9rem;">Sandip University, Nashik — deep dive
+                                into AI & modern tech.</p>
+                        </div>
+                    </div>
+                    <div class="relative mb-10">
+                        <div class="timeline-dot bg-accent-500"></div>
+                        <div class="glass-card p-5 rounded-2xl ml-4"><span
+                                class="text-accent-500 text-sm font-semibold">2025</span>
+                            <h4 class="text-lg font-semibold" style="color:var(--text);">AI Learning Journey</h4>
+                            <p style="color:var(--text-dim); font-size:0.9rem;">Building projects, exploring ML, and
+                                growing every day.</p>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="timeline-dot bg-primary-500 timeline-dot-glow"></div>
+                        <div class="glass-card p-5 rounded-2xl ml-4 border-primary-500/30"><span
+                                class="text-primary-500 text-sm font-semibold">🚀 Future</span>
+                            <h4 class="text-lg font-semibold" style="color:var(--text);">AI Engineer & Entrepreneur</h4>
+                            <p style="color:var(--text-dim); font-size:0.9rem;">Building healthcare AI products that
+                                change the world.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-20" aria-label="Skills Overview">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <h2 class="text-4xl font-bold mb-12 text-center gradient-text" style="font-family:'Poppins',sans-serif;"
+                    data-aos="fade-up">Skills Overview</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center" data-aos="fade-up">
+                    <article class="glass-card p-6 rounded-2xl">
+                        <div class="circular-progress" style="--percent:65%;"><span
+                                style="color:var(--text);">65%</span></div>
+                        <p class="font-semibold" style="color:var(--text);">Python</p>
+                    </article>
+                    <article class="glass-card p-6 rounded-2xl">
+                        <div class="circular-progress" style="--percent:82%;"><span
+                                style="color:var(--text);">82%</span></div>
+                        <p class="font-semibold" style="color:var(--text);">JavaScript</p>
+                    </article>
+                    <article class="glass-card p-6 rounded-2xl">
+                        <div class="circular-progress" style="--percent:55%;"><span
+                                style="color:var(--text);">55%</span></div>
+                        <p class="font-semibold" style="color:var(--text);">AI / ML</p>
+                    </article>
+                    <article class="glass-card p-6 rounded-2xl">
+                        <div class="circular-progress" style="--percent:90%;"><span
+                                style="color:var(--text);">90%</span></div>
+                        <p class="font-semibold" style="color:var(--text);">HTML / CSS</p>
+                    </article>
+                    <article class="glass-card p-6 rounded-2xl">
+                        <div class="circular-progress" style="--percent:85%;"><span
+                                style="color:var(--text);">85%</span></div>
+                        <p class="font-semibold" style="color:var(--text);">Git / GitHub</p>
+                    </article>
+                    <article class="glass-card p-6 rounded-2xl">
+                        <div class="circular-progress" style="--percent:40%;"><span
+                                style="color:var(--text);">40%</span></div>
+                        <p class="font-semibold" style="color:var(--text);">SQL</p>
+                    </article>
+                    <article class="glass-card p-6 rounded-2xl">
+                        <div class="circular-progress" style="--percent:50%;"><span
+                                style="color:var(--text);">50%</span></div>
+                        <p class="font-semibold" style="color:var(--text);">React (Learning)</p>
+                    </article>
+                    <article class="glass-card p-6 rounded-2xl">
+                        <div class="circular-progress" style="--percent:45%;"><span
+                                style="color:var(--text);">45%</span></div>
+                        <p class="font-semibold" style="color:var(--text);">Node.js (Learning)</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="py-20 section-alt" aria-label="Technologies">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <h2 class="text-4xl font-bold mb-12 text-center gradient-text" style="font-family:'Poppins',sans-serif;"
+                    data-aos="fade-up">Technologies I Work With</h2>
+                <div class="flex flex-wrap justify-center gap-4" data-aos="fade-up">
+                    <span class="glass-card px-5 py-3 rounded-full text-sm font-semibold"><i
+                            class="fab fa-python mr-2 text-yellow-500"></i> Python</span>
+                    <span class="glass-card px-5 py-3 rounded-full text-sm font-semibold"><i
+                            class="fab fa-html5 mr-2 text-orange-500"></i> HTML5</span>
+                    <span class="glass-card px-5 py-3 rounded-full text-sm font-semibold"><i
+                            class="fab fa-css3-alt mr-2 text-blue-500"></i> CSS3</span>
+                    <span class="glass-card px-5 py-3 rounded-full text-sm font-semibold"><i
+                            class="fab fa-js mr-2 text-yellow-400"></i> JavaScript</span>
+                    <span class="glass-card px-5 py-3 rounded-full text-sm font-semibold"><i
+                            class="fab fa-react mr-2 text-cyan-400"></i> React (Learning)</span>
+                    <span class="glass-card px-5 py-3 rounded-full text-sm font-semibold"><i
+                            class="fab fa-node-js mr-2 text-green-500"></i> Node.js</span>
+                    <span class="glass-card px-5 py-3 rounded-full text-sm font-semibold"><i
+                            class="fas fa-brain mr-2 text-purple-500"></i> TensorFlow</span>
+                    <span class="glass-card px-5 py-3 rounded-full text-sm font-semibold"><i
+                            class="fas fa-fire mr-2 text-orange-600"></i> PyTorch</span>
+                    <span class="glass-card px-5 py-3 rounded-full text-sm font-semibold"><i
+                            class="fab fa-github mr-2"></i> GitHub</span>
+                    <span class="glass-card px-5 py-3 rounded-full text-sm font-semibold"><i
+                            class="fab fa-docker mr-2 text-blue-400"></i> Docker</span>
+                    <span class="glass-card px-5 py-3 rounded-full text-sm font-semibold"><i
+                            class="fab fa-linux mr-2"></i> Linux</span>
+                    <span class="glass-card px-5 py-3 rounded-full text-sm font-semibold"><i
+                            class="fas fa-code mr-2 text-blue-600"></i> VS Code</span>
+                </div>
+            </div>
+        </section>
+        <section class="py-20" aria-label="Experience">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <h2 class="text-4xl font-bold mb-12 text-center gradient-text" style="font-family:'Poppins',sans-serif;"
+                    data-aos="fade-up">Experience</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8" data-aos="fade-up">
+                    <article class="glass-card p-8 rounded-2xl">
+                        <h3 class="text-xl font-semibold mb-4 flex items-center gap-2" style="color:var(--text);"><i
+                                class="fas fa-flask text-primary-500" aria-hidden="true"></i> Pharmaceutical Industry
+                        </h3>
+                        <ul class="space-y-2 text-sm" style="color:var(--text-dim);">
+                            <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Quality Control</li>
+                            <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Raw Material Analysis</li>
+                            <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Documentation</li>
+                            <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Quality Assurance</li>
+                            <li><i class="fas fa-check-circle text-green-500 mr-2"></i> GMP</li>
+                        </ul>
+                    </article>
+                    <article class="glass-card p-8 rounded-2xl">
+                        <h3 class="text-xl font-semibold mb-4 flex items-center gap-2" style="color:var(--text);"><i
+                                class="fas fa-brain text-purple-500" aria-hidden="true"></i> AI Journey</h3>
+                        <ul class="space-y-2 text-sm" style="color:var(--text-dim);">
+                            <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Python Programming</li>
+                            <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Machine Learning</li>
+                            <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Real-World Projects</li>
+                            <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Research Exploration</li>
+                            <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Continuous Learning</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="py-20 section-alt" aria-label="Certifications">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <h2 class="text-4xl font-bold mb-12 text-center gradient-text" style="font-family:'Poppins',sans-serif;"
+                    data-aos="fade-up">Certifications</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4" data-aos="fade-up">
+                    <article class="glass-card p-5 rounded-2xl text-center"><i
+                            class="fab fa-python text-3xl text-yellow-500 mb-2"></i>
+                        <p class="font-semibold" style="color:var(--text);">Python</p>
+                    </article>
+                    <article class="glass-card p-5 rounded-2xl text-center"><i
+                            class="fas fa-database text-3xl text-blue-500 mb-2"></i>
+                        <p class="font-semibold" style="color:var(--text);">SQL</p>
+                    </article>
+                    <article class="glass-card p-5 rounded-2xl text-center"><i
+                            class="fas fa-brain text-3xl text-purple-500 mb-2"></i>
+                        <p class="font-semibold" style="color:var(--text);">AI / ML</p>
+                    </article>
+                    <article class="glass-card p-5 rounded-2xl text-center"><i
+                            class="fab fa-git-alt text-3xl text-orange-500 mb-2"></i>
+                        <p class="font-semibold" style="color:var(--text);">Git</p>
+                    </article>
+                    <article class="glass-card p-5 rounded-2xl text-center"><i
+                            class="fab fa-html5 text-3xl text-orange-600 mb-2"></i>
+                        <p class="font-semibold" style="color:var(--text);">HTML</p>
+                    </article>
+                    <article class="glass-card p-5 rounded-2xl text-center"><i
+                            class="fab fa-css3-alt text-3xl text-blue-400 mb-2"></i>
+                        <p class="font-semibold" style="color:var(--text);">CSS</p>
+                    </article>
+                    <article class="glass-card p-5 rounded-2xl text-center"><i
+                            class="fab fa-js text-3xl text-yellow-400 mb-2"></i>
+                        <p class="font-semibold" style="color:var(--text);">JavaScript</p>
+                    </article>
+                    <article class="glass-card p-5 rounded-2xl text-center"><i
+                            class="fas fa-robot text-3xl text-accent-500 mb-2"></i>
+                        <p class="font-semibold" style="color:var(--text);">Machine Learning</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="py-20 section-alt" aria-label="Fun Facts">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <h2 class="text-4xl font-bold mb-12 text-center gradient-text" style="font-family:'Poppins',sans-serif;"
+                    data-aos="fade-up">Fun Facts</h2>
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4 text-center" data-aos="fade-up">
+                    <article class="glass-card p-5 rounded-2xl">
+                        <div class="text-3xl font-extrabold text-primary-500">500+</div>
+                        <p class="text-sm" style="color:var(--text-dim);">Hours Coding</p>
+                    </article>
+                    <article class="glass-card p-5 rounded-2xl">
+                        <div class="text-3xl font-extrabold text-primary-500">10+</div>
+                        <p class="text-sm" style="color:var(--text-dim);">Projects</p>
+                    </article>
+                    <article class="glass-card p-5 rounded-2xl">
+                        <div class="text-3xl font-extrabold text-primary-500">100+</div>
+                        <p class="text-sm" style="color:var(--text-dim);">GitHub Commits</p>
+                    </article>
+                    <article class="glass-card p-5 rounded-2xl">
+                        <div class="text-3xl font-extrabold text-primary-500">50+</div>
+                        <p class="text-sm" style="color:var(--text-dim);">Algorithms</p>
+                    </article>
+                    <article class="glass-card p-5 rounded-2xl">
+                        <div class="text-3xl font-extrabold text-primary-500">20+</div>
+                        <p class="text-sm" style="color:var(--text-dim);">Certificates</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="py-20" aria-label="Quote">
+            <div class="container mx-auto px-6 max-w-3xl text-center" data-aos="zoom-in">
+                <div class="glass-card p-12 rounded-3xl"><i class="fas fa-quote-left text-5xl text-primary-500 mb-6"
+                        aria-hidden="true"></i>
+                    <p class="text-2xl font-semibold italic mb-4" style="color:var(--text);">"Technology becomes
+                        meaningful when it improves people's lives."</p>
+                    <p class="text-lg" style="color:var(--text-dim);">— Vyankatesh Vivekanand Jaware</p>
+                </div>
+            </div>
+        </section>
+        <section class="py-20" aria-label="Call to action">
+            <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+                <h2 class="text-4xl font-bold mb-6 gradient-text" style="font-family:'Poppins',sans-serif;">Interested
+                    in working together?</h2>
+                <p class="text-lg mb-8" style="color:var(--text-dim);">I'm open to internships, collaborations, and
+                    exciting projects.</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="Contact.html"
+                        class="bg-primary-500 hover:bg-primary-600 text-white px-8 py-3 rounded-full font-semibold transition inline-flex items-center gap-2"><i
+                            class="fas fa-paper-plane" aria-hidden="true"></i> Hire Me</a>
+                    <a href="Resume.html"
+                        class="border border-primary-500 text-primary-500 hover:bg-primary-50 px-8 py-3 rounded-full font-semibold transition inline-flex items-center gap-2"><i
+                            class="fas fa-download" aria-hidden="true"></i> Download Resume</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-10 border-t border-gray-200/20">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-lg font-bold gradient-text mb-2" style="font-family:'Poppins',sans-serif;">Vyankatesh Jaware
+            </p>
+            <p class="text-sm" style="color:var(--text-dim);">AI Engineer &amp; Full-Stack Developer</p>
+            <div class="flex justify-center gap-6 mt-4 text-xl" style="color:var(--text-dim);">
+                <a href="https://github.com/vyankatesh2002" target="_blank" rel="noopener noreferrer"
+                    class="hover:text-primary-500 transition" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/vyankatesh-jaware-0397a325a" target="_blank"
+                    rel="noopener noreferrer" class="hover:text-primary-500 transition" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/vyankatesh_jaware" target="_blank" rel="noopener noreferrer"
+                    class="hover:text-primary-500 transition" aria-label="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="mailto:vyankateshvjaware2002@gmail.com" class="hover:text-primary-500 transition"
+                    aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="text-xs mt-6" style="color:var(--text-dim);">&copy; 2026 Vyankatesh Jaware. All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/about.js"></script>
+</body>
+
+</html>
