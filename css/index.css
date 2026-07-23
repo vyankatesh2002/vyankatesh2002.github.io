@@ -8,7 +8,7 @@
     url("../images/bg-.jpeg") no-repeat center center/cover;
   background-attachment: fixed;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 80vh;
   position: relative;
 }
 
@@ -20,7 +20,7 @@
 
 /* Left column (text) - push 10% from left */
 #home .flex-1:first-child {
-  padding-left: 10%;
+  padding-left: 5%;
 }
 
 /* ALL hero text white with premium font styling */
@@ -133,9 +133,9 @@
 }
 
 /* ===== RESPONSIVE ===== */
-@media (min-width: 1024px) {
+@media (min-width: 1000px) {
   #home .flex-1:first-child {
-    padding-left: 10%;
+    padding-left: 5%;
   }
   #home .flex-1:first-child h1 {
     font-size: 4.5rem;
@@ -144,7 +144,7 @@
 
 @media (max-width: 1024px) {
   #home .flex-1:first-child {
-    padding-left: 5%;
+    padding-left: 10%;
   }
   #home .flex-1:first-child h1 {
     font-size: 3rem;

@@ -2,404 +2,476 @@
 <html lang="en" data-theme="light">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Vyankatesh Jaware – AI Engineer, ML Engineer, Full Stack Developer. Building intelligent systems that solve real-world problems." />
-  <meta name="author" content="Vyankatesh Jaware" />
-  <meta property="og:title" content="Vyankatesh Jaware | AI Engineer & Developer" />
-  <meta property="og:description"
-    content="Premium portfolio of an AI Engineer combining healthcare background with cutting-edge technology." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://vyankatesh2002.github.io/" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <title>Vyankatesh Jaware · AI Engineer & Full Stack Developer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Vyankatesh Jaware – AI Engineer, ML Engineer, Full Stack Developer. Building intelligent systems that solve real-world problems." />
+    <meta name="author" content="Vyankatesh Jaware" />
+    <meta property="og:title" content="Vyankatesh Jaware | AI Engineer & Developer" />
+    <meta property="og:description"
+        content="Premium portfolio of an AI Engineer combining healthcare background with cutting-edge technology." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vyankatesh2002.github.io/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Vyankatesh Jaware · AI Engineer & Full Stack Developer</title>
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          fontFamily: {
-            heading: ['Poppins', 'sans-serif'],
-            body: ['Inter', 'sans-serif'],
-          },
-          colors: {
-            primary: { 400: '#3B82F6', 500: '#2563EB', 600: '#1D4ED8' },
-            accent: { 400: '#06B6D4', 500: '#06B6D4' },
-            purple: { 500: '#7C3AED', 600: '#6D28D9' },
-          },
-        },
-      },
-    }
-  </script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        heading: ['Poppins', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: { 400: '#3B82F6', 500: '#2563EB', 600: '#1D4ED8' },
+                        accent: { 400: '#06B6D4', 500: '#06B6D4' },
+                        purple: { 500: '#7C3AED', 600: '#6D28D9' },
+                    },
+                },
+            },
+        }
+    </script>
 
-  <!-- Libraries (loaded synchronously so available to our scripts) -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
-    rel="stylesheet" />
+    <!-- Libraries (loaded synchronously so available to our scripts) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js">
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
 
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/index.css" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
 </head>
 
 <body class="font-body bg-white text-gray-900 antialiased">
 
-  <!-- Particle Background -->
-  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+    <!-- Particle Background -->
+    <canvas id="particles-canvas" aria-hidden="true"></canvas>
 
-  <!-- Skip to content -->
-  <a href="#main-content"
-    class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:bg-primary-500 focus:text-white focus:px-4 focus:py-2 focus:rounded-full focus:z-50">
-    Skip to main content
-  </a>
+    <!-- Skip to content -->
+    <a href="#main-content"
+        class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:bg-primary-500 focus:text-white focus:px-4 focus:py-2 focus:rounded-full focus:z-50">
+        Skip to main content
+    </a>
 
-  <!-- Navigation -->
-  <nav class="sticky top-0 z-50 glass border-b border-gray-200/20" aria-label="Main navigation">
-    <div class="container mx-auto px-6 flex items-center justify-between py-4">
-      <a href="#home" class="text-2xl font-bold gradient-text font-heading" aria-label="Home">Vyanki</a>
-      <div class="hidden lg:flex items-center gap-8">
-        <a href="#home" class="nav-link-active">Home</a>
-        <a href="About.html" class="nav-link">About</a>
-        <a href="Skills.html" class="nav-link">Skills</a>
-        <a href="Project.html" class="nav-link">Projects</a>
-        <a href="Experince.html" class="nav-link">Experience</a>
-        <a href="Contact.html" class="nav-link">Contact</a>
-        <button id="theme-toggle" class="nav-link text-xl" aria-label="Toggle theme"><i
-            class="fas fa-moon"></i></button>
-        <a href="Resume.html"
-          class="bg-primary-500 hover:bg-primary-600 text-white px-5 py-2 rounded-full font-medium transition">Resume</a>
-      </div>
-      <button id="mobile-toggle" class="lg:hidden text-2xl text-gray-800" aria-label="Toggle mobile menu"
-        aria-expanded="false"><i class="fas fa-bars"></i></button>
-    </div>
-    <div id="mobile-menu" class="hidden lg:hidden glass p-6 flex flex-col gap-4 bg-white/90" role="navigation"
-      aria-label="Mobile navigation">
-      <a href="#home" class="nav-link-active">Home</a>
-      <a href="About.html" class="nav-link">About</a>
-      <a href="Skills.html" class="nav-link">Skills</a>
-      <a href="Project.html" class="nav-link">Projects</a>
-      <a href="Experince.html" class="nav-link">Experience</a>
-      <a href="Contact.html" class="nav-link">Contact</a>
-      <a href="Resume.html" class="bg-primary-500 text-white py-2 rounded-full text-center">Resume</a>
-    </div>
-  </nav>
-
-  <main id="main-content">
-    <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center relative pt-20" aria-label="Hero">
-      <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-12">
-        <div class="flex-1" data-aos="fade-right" data-aos-duration="1000">
-          <p class="text-primary-500 text-lg font-semibold mb-2">Hello, I'm</p>
-          <h1 class="font-heading text-5xl lg:text-7xl font-extrabold leading-tight mb-4">Vyankatesh Vivekanand Jaware
-          </h1>
-          <div class="text-2xl lg:text-3xl font-semibold text-primary-500 mb-6"><span id="typed"></span></div>
-          <p class="text-gray-600 max-w-xl mb-8">AI Engineer &amp; Full-Stack Developer blending healthcare precision
-            with cutting-edge technology to build intelligent systems that solve real-world problems.</p>
-          <div class="flex flex-wrap gap-4">
-            <a href="Resume.html"
-              class="bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-full font-semibold transition inline-flex items-center gap-2"><i
-                class="fas fa-download" aria-hidden="true"></i> Resume</a>
-            <a href="Project.html"
-              class="border border-primary-500 text-primary-500 hover:bg-primary-50 px-6 py-3 rounded-full font-semibold transition inline-flex items-center gap-2"><i
-                class="fas fa-code" aria-hidden="true"></i> Projects</a>
-            <a href="Contact.html"
-              class="bg-purple-500 hover:bg-purple-600 text-white px-6 py-3 rounded-full font-semibold transition inline-flex items-center gap-2"><i
-                class="fas fa-paper-plane" aria-hidden="true"></i> Hire Me</a>
-          </div>
-          <div class="flex gap-5 mt-8 text-xl text-gray-400">
-            <a href="https://github.com/vyankatesh2002" target="_blank" rel="noopener noreferrer"
-              class="hover:text-primary-500 transition" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/vyankatesh-jaware-0397a325a" target="_blank" rel="noopener noreferrer"
-              class="hover:text-primary-500 transition" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/vyankatesh_jaware" target="_blank" rel="noopener noreferrer"
-              class="hover:text-primary-500 transition" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="mailto:vyankateshvjaware2002@gmail.com" class="hover:text-primary-500 transition"
-              aria-label="Email"><i class="fas fa-envelope"></i></a>
-          </div>
-        </div>
-        <div class="flex-1 flex justify-center" data-aos="zoom-in" data-aos-duration="1000">
-          <div
-            class="relative w-64 h-64 lg:w-80 lg:h-80 rounded-full p-1 bg-gradient-to-tr from-primary-500 via-purple-500 to-accent-400">
-            <img src="images/22561.jpg" alt="Vyankatesh Jaware"
-              class="w-full h-full object-cover rounded-full border-4 border-white" loading="eager" />
-          </div>
-        </div>
-      </div>
-      <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce"><i
-          class="fas fa-chevron-down text-2xl text-primary-400" aria-hidden="true"></i></div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-20" aria-label="About Me">
-      <div class="container mx-auto px-6">
-        <h2 class="font-heading text-4xl font-bold mb-12 text-center" data-aos="fade-up">About Me</h2>
-        <div class="max-w-4xl mx-auto glass-card p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="200">
-          <p class="text-gray-700 text-lg mb-6">I'm a <strong class="text-gray-900">Computer Science student</strong>
-            specializing in <strong class="text-primary-500">Artificial Intelligence, Machine Learning, and Virtual
-              Reality</strong>. My unique journey began with a <strong class="text-gray-900">Diploma in
-              Pharmacy</strong> and <strong class="text-primary-500">1.5 years of professional experience</strong> as a
-            Quality Control Associate. Currently, I also work night shifts at <strong class="text-gray-900">Green Plus
-              Pharmacy</strong>, which sharpens my time management and discipline.</p>
-          <p class="text-gray-700 text-lg">That background instilled in me <strong class="text-gray-900">discipline,
-              analytical thinking, and attention to detail</strong> — qualities I now bring to every line of code. I'm
-            driven by a mission to <strong class="text-primary-500">build AI products that solve real-world healthcare
-              problems</strong>, merging domain expertise with modern technology.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Statistics Section -->
-    <section class="py-16 bg-gray-50" aria-label="Statistics">
-      <div class="container mx-auto px-6">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto text-center">
-          <article class="glass-card p-6 rounded-2xl" data-aos="fade-up">
-            <div class="text-4xl font-extrabold text-primary-500">8</div>
-            <div class="text-gray-600 mt-2">Projects</div>
-          </article>
-          <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
-            <div class="text-4xl font-extrabold text-primary-500">6</div>
-            <div class="text-gray-600 mt-2">GitHub Repos</div>
-          </article>
-          <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
-            <div class="text-4xl font-extrabold text-primary-500">200</div>
-            <div class="text-gray-600 mt-2">Learning Hours</div>
-          </article>
-          <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="300">
-            <div class="text-4xl font-extrabold text-primary-500">2</div>
-            <div class="text-gray-600 mt-2">Years Experience</div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-20" aria-label="Skills">
-      <div class="container mx-auto px-6 max-w-6xl">
-        <h2 class="font-heading text-4xl font-bold mb-12 text-center" data-aos="fade-up">Skills &amp; Expertise</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <article class="glass-card p-6 rounded-2xl" data-aos="fade-up">
-            <h3 class="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-800"><i
-                class="fas fa-code text-primary-500" aria-hidden="true"></i> Programming</h3>
-            <div class="flex flex-wrap gap-2"><span
-                class="bg-blue-50 text-primary-500 px-3 py-1 rounded-full text-sm">Python</span><span
-                class="bg-blue-50 text-primary-500 px-3 py-1 rounded-full text-sm">C++</span><span
-                class="bg-blue-50 text-primary-500 px-3 py-1 rounded-full text-sm">JavaScript</span><span
-                class="bg-blue-50 text-primary-500 px-3 py-1 rounded-full text-sm">SQL</span></div>
-          </article>
-          <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="50">
-            <h3 class="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-800"><i
-                class="fas fa-desktop text-accent-500" aria-hidden="true"></i> Frontend</h3>
-            <div class="flex flex-wrap gap-2"><span
-                class="bg-cyan-50 text-accent-500 px-3 py-1 rounded-full text-sm">HTML</span><span
-                class="bg-cyan-50 text-accent-500 px-3 py-1 rounded-full text-sm">CSS</span><span
-                class="bg-cyan-50 text-accent-500 px-3 py-1 rounded-full text-sm">Tailwind</span><span
-                class="bg-cyan-50 text-accent-500 px-3 py-1 rounded-full text-sm">Bootstrap</span><span
-                class="bg-cyan-50 text-accent-500 px-3 py-1 rounded-full text-sm">React (Learning)</span></div>
-          </article>
-          <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-800"><i
-                class="fas fa-server text-purple-500" aria-hidden="true"></i> Backend</h3>
-            <div class="flex flex-wrap gap-2"><span
-                class="bg-purple-50 text-purple-500 px-3 py-1 rounded-full text-sm">Node.js</span><span
-                class="bg-purple-50 text-purple-500 px-3 py-1 rounded-full text-sm">Express</span><span
-                class="bg-purple-50 text-purple-500 px-3 py-1 rounded-full text-sm">FastAPI (Learning)</span></div>
-          </article>
-          <article class="glass-card p-6 rounded-2xl" data-aos="fade-up">
-            <h3 class="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-800"><i
-                class="fas fa-database text-green-500" aria-hidden="true"></i> Database</h3>
-            <div class="flex flex-wrap gap-2"><span
-                class="bg-green-50 text-green-500 px-3 py-1 rounded-full text-sm">MongoDB</span><span
-                class="bg-green-50 text-green-500 px-3 py-1 rounded-full text-sm">PostgreSQL</span><span
-                class="bg-green-50 text-green-500 px-3 py-1 rounded-full text-sm">Firebase</span><span
-                class="bg-green-50 text-green-500 px-3 py-1 rounded-full text-sm">Supabase</span></div>
-          </article>
-          <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="50">
-            <h3 class="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-800"><i
-                class="fas fa-brain text-yellow-500" aria-hidden="true"></i> AI / ML</h3>
-            <div class="flex flex-wrap gap-2"><span
-                class="bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full text-sm">NumPy</span><span
-                class="bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full text-sm">Pandas</span><span
-                class="bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full text-sm">Scikit-Learn</span><span
-                class="bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full text-sm">TensorFlow</span><span
-                class="bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full text-sm">PyTorch</span><span
-                class="bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full text-sm">OpenCV</span><span
-                class="bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full text-sm">HuggingFace</span></div>
-          </article>
-          <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-800"><i
-                class="fas fa-cloud text-sky-500" aria-hidden="true"></i> Cloud &amp; DevOps</h3>
-            <div class="flex flex-wrap gap-2"><span
-                class="bg-sky-50 text-sky-500 px-3 py-1 rounded-full text-sm">Git</span><span
-                class="bg-sky-50 text-sky-500 px-3 py-1 rounded-full text-sm">GitHub</span><span
-                class="bg-sky-50 text-sky-500 px-3 py-1 rounded-full text-sm">Docker</span><span
-                class="bg-sky-50 text-sky-500 px-3 py-1 rounded-full text-sm">AWS</span><span
-                class="bg-sky-50 text-sky-500 px-3 py-1 rounded-full text-sm">Vercel</span></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-gray-50" aria-label="Featured Projects">
-      <div class="container mx-auto px-6">
-        <h2 class="font-heading text-4xl font-bold mb-12 text-center" data-aos="fade-up">Featured Projects</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto" id="projects-grid"></div>
-      </div>
-    </section>
-
-    <!-- Experience & Education Section -->
-    <section id="experience" class="py-20" aria-label="Education and Experience">
-      <div class="container mx-auto px-6 max-w-6xl">
-        <h2 class="font-heading text-4xl font-bold mb-12 text-center" data-aos="fade-up">Education &amp; Experience</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div>
-            <h3 class="text-2xl font-bold mb-6 gradient-text" data-aos="fade-up"><i class="fas fa-graduation-cap mr-2"
-                aria-hidden="true"></i> Education</h3>
-            <div class="space-y-6">
-              <article class="glass-card p-6 rounded-2xl highlight-card" data-aos="fade-up" data-aos-delay="100"><span
-                  class="text-sm font-semibold text-primary-500">2024 – Present</span>
-                <h4 class="text-lg font-semibold mt-1">B.Sc Computer Science</h4>
-                <p class="text-sm text-gray-600">AI · ML · Virtual Reality</p>
-                <p class="text-xs mt-2 text-gray-500">Sandip University, Nashik</p>
-              </article>
-              <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="150"><span
-                  class="text-sm font-semibold text-purple-500">2021 – 2024</span>
-                <h4 class="text-lg font-semibold mt-1">Diploma in Pharmacy</h4>
-                <p class="text-sm text-gray-600">Pharmaceutical Sciences · Quality Standards</p>
-                <p class="text-xs mt-2 text-gray-500">Jijamata College of Pharmacy, Sarati</p>
-              </article>
-              <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="200"><span
-                  class="text-sm font-semibold text-accent-500">2018 – 2020</span>
-                <h4 class="text-lg font-semibold mt-1">Higher Secondary (12th)</h4>
-                <p class="text-sm text-gray-600">Science Stream</p>
-                <p class="text-xs mt-2 text-gray-500">Saraswati Madhyamik Vidyalay, Sundarkhed</p>
-              </article>
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 glass border-b border-gray-200/20" aria-label="Main navigation">
+        <div class="container mx-auto px-6 flex items-center justify-between py-4">
+            <a href="#home" class="text-2xl font-bold gradient-text font-heading" aria-label="Home">Vyanki</a>
+            <div class="hidden lg:flex items-center gap-8">
+                <a href="#home" class="nav-link-active">Home</a>
+                <a href="About.html" class="nav-link">About</a>
+                <a href="Skills.html" class="nav-link">Skills</a>
+                <a href="Project.html" class="nav-link">Projects</a>
+                <a href="Experince.html" class="nav-link">Experience</a>
+                <a href="Contact.html" class="nav-link">Contact</a>
+                <button id="theme-toggle" class="nav-link text-xl" aria-label="Toggle theme"><i
+                        class="fas fa-moon"></i></button>
+                <a href="Resume.html"
+                    class="bg-primary-500 hover:bg-primary-600 text-white px-5 py-2 rounded-full font-medium transition">Resume</a>
             </div>
-          </div>
-          <div>
-            <h3 class="text-2xl font-bold mb-6 gradient-text" data-aos="fade-up"><i class="fas fa-briefcase mr-2"
-                aria-hidden="true"></i> Experience</h3>
-            <div class="space-y-6">
-              <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="100"><span
-                  class="text-sm font-semibold text-purple-500">Present · Night Shift</span>
-                <h4 class="text-lg font-semibold mt-1">Pharmacist (Part-Time)</h4>
-                <p class="text-sm font-medium text-gray-500">Green Plus Pharmacy</p>
-                <p class="text-sm mt-2 text-gray-600">Manage night operations, dispense medications, and ensure patient
-                  safety – while studying AI during the day.</p>
-              </article>
-              <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="150"><span
-                  class="text-sm font-semibold text-primary-500">Feb 2023 – May 2024 · 1.5 Years</span>
-                <h4 class="text-lg font-semibold mt-1">Quality Control Associate</h4>
-                <p class="text-sm font-medium text-gray-500">Agio Pharmaceuticals Pvt. Ltd.</p>
-                <ul class="mt-4 space-y-2 text-sm text-gray-600">
-                  <li><i class="fas fa-check-circle text-green-500 mr-2" aria-hidden="true"></i> Raw material analysis
-                    &amp; testing</li>
-                  <li><i class="fas fa-check-circle text-green-500 mr-2" aria-hidden="true"></i> Quality documentation
-                    &amp; SOPs</li>
-                  <li><i class="fas fa-check-circle text-green-500 mr-2" aria-hidden="true"></i> GMP compliance</li>
-                  <li><i class="fas fa-check-circle text-green-500 mr-2" aria-hidden="true"></i> Analytical thinking
-                    &amp; problem solving</li>
-                  <li><i class="fas fa-check-circle text-green-500 mr-2" aria-hidden="true"></i> Professional discipline
-                    &amp; teamwork</li>
-                </ul>
-              </article>
-              <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="200"><span
-                  class="text-sm font-semibold text-accent-500">2024 – Present</span>
-                <h4 class="text-lg font-semibold mt-1">Software Development Journey</h4>
-                <p class="text-sm text-gray-600">Self-taught frontend &amp; AI skills while balancing night shifts.
-                  Building real projects, contributing to GitHub.</p>
-              </article>
-            </div>
-          </div>
+            <button id="mobile-toggle" class="lg:hidden text-2xl text-gray-800" aria-label="Toggle mobile menu"
+                aria-expanded="false"><i class="fas fa-bars"></i></button>
         </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-50" aria-label="Contact">
-      <div class="container mx-auto px-6 max-w-6xl">
-        <h2 class="font-heading text-4xl font-bold mb-12 text-center" data-aos="fade-up">Get In Touch</h2>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div class="glass-card p-8 rounded-3xl" data-aos="fade-right">
-            <h3 class="text-2xl font-semibold mb-6 flex items-center gap-2 text-gray-900"><i
-                class="fas fa-paper-plane text-primary-500" aria-hidden="true"></i> Send a Message</h3>
-            <form id="contactForm" class="space-y-5" novalidate>
-              <div><input type="text" name="name" placeholder="Your Name" required
-                  class="w-full bg-transparent border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-primary-500" />
-              </div>
-              <div><input type="email" name="email" placeholder="Email Address" required
-                  class="w-full bg-transparent border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-primary-500" />
-              </div>
-              <div><textarea name="message" placeholder="Your Message" rows="5" required
-                  class="w-full bg-transparent border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-primary-500"></textarea>
-              </div>
-              <button type="submit"
-                class="bg-primary-500 hover:bg-primary-600 text-white w-full py-3 rounded-full font-semibold transition inline-flex items-center justify-center gap-2"><i
-                  class="fas fa-paper-plane" aria-hidden="true"></i> Send Message</button>
-            </form>
-          </div>
-          <div class="glass-card p-8 rounded-3xl flex flex-col justify-center" data-aos="fade-left">
-            <h3 class="text-2xl font-semibold mb-6 flex items-center gap-2 text-gray-900"><i
-                class="fas fa-address-card text-purple-500" aria-hidden="true"></i> Contact Info</h3>
-            <div class="space-y-4 text-gray-700">
-              <p><i class="fas fa-envelope text-primary-500 w-6" aria-hidden="true"></i> vyankateshvjaware2002@gmail.com
-              </p>
-              <p><i class="fas fa-phone text-primary-500 w-6" aria-hidden="true"></i> +91 99603 40222</p>
-              <p><i class="fas fa-map-marker-alt text-primary-500 w-6" aria-hidden="true"></i> Nashik, Maharashtra,
-                India</p>
-              <p><i class="fab fa-github text-primary-500 w-6" aria-hidden="true"></i> github.com/vyankatesh2002</p>
-              <p><i class="fab fa-linkedin text-primary-500 w-6" aria-hidden="true"></i>
-                linkedin.com/in/vyankatesh-jaware</p>
-              <div class="flex items-center gap-2 mt-4"><span class="w-3 h-3 rounded-full bg-green-500"
-                  aria-hidden="true"></span><span class="text-green-600 font-medium">Available for Internship</span>
-              </div>
-            </div>
-            <div class="mt-6 rounded-xl overflow-hidden" style="height:192px;">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3746985.524464512!2d73.712479!3d20.006347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddf8b0c0c0c0c0%3A0x0!2zMjDCsDAwJzIyLjkiTiA3M8KwNDInNDQuOSJF!5e0!3m2!1sen!2sin!4v1620000000000"
-                width="100%" height="100%" allowfullscreen="" loading="lazy"
-                title="Google Maps location of Nashik, Maharashtra"></iframe>
-            </div>
-          </div>
+        <div id="mobile-menu" class="hidden lg:hidden glass p-6 flex flex-col gap-4 bg-white/90" role="navigation"
+            aria-label="Mobile navigation">
+            <a href="#home" class="nav-link-active">Home</a>
+            <a href="About.html" class="nav-link">About</a>
+            <a href="Skills.html" class="nav-link">Skills</a>
+            <a href="Project.html" class="nav-link">Projects</a>
+            <a href="Experince.html" class="nav-link">Experience</a>
+            <a href="Contact.html" class="nav-link">Contact</a>
+            <a href="Resume.html" class="bg-primary-500 text-white py-2 rounded-full text-center">Resume</a>
         </div>
-      </div>
-    </section>
-  </main>
+    </nav>
 
-  <!-- Footer -->
-  <footer class="py-10 border-t border-gray-200/20">
-    <div class="container mx-auto px-6 text-center">
-      <p class="text-lg font-bold gradient-text mb-2 font-heading">Vyankatesh Jaware</p>
-      <p class="text-sm text-gray-500">AI Engineer &amp; Full-Stack Developer</p>
-      <div class="flex justify-center gap-6 mt-4 text-xl text-gray-400">
-        <a href="https://github.com/vyankatesh2002" target="_blank" rel="noopener noreferrer"
-          class="hover:text-primary-500 transition" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/vyankatesh-jaware-0397a325a" target="_blank" rel="noopener noreferrer"
-          class="hover:text-primary-500 transition" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/vyankatesh_jaware" target="_blank" rel="noopener noreferrer"
-          class="hover:text-primary-500 transition" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="mailto:vyankateshvjaware2002@gmail.com" class="hover:text-primary-500 transition" aria-label="Email"><i
-            class="fas fa-envelope"></i></a>
-      </div>
-      <p class="text-xs mt-6 text-gray-400">&copy; 2026 Vyankatesh Jaware. All rights reserved.</p>
-    </div>
-  </footer>
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center relative pt-20" aria-label="Hero">
+            <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-12">
+                <!-- Text Content -->
+                <div class="flex-1" data-aos="fade-right" data-aos-duration="1000">
+                    <p class="text-primary-500 text-lg font-semibold mb-2">Hello, I'm</p>
+                    <h1 class="font-heading text-5xl lg:text-7xl font-extrabold leading-tight mb-4">
+                        Vyankatesh Vivekanand Jaware
+                    </h1>
+                    <div class="text-2xl lg:text-3xl font-semibold text-primary-500 mb-6">
+                        <span id="typed"></span>
+                    </div>
+                    <p class="text-gray-600 max-w-xl mb-8">
+                        AI Engineer &amp; Full-Stack Developer blending healthcare precision
+                        with cutting-edge technology to build intelligent systems that solve real-world problems.
+                    </p>
 
-  <!-- Scripts (at bottom so DOM is ready) -->
-  <script src="js/script.js"></script>
-  <script src="js/index.js"></script>
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-wrap gap-4 mb-6">
+                        <a href="Resume.html"
+                            class="bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-full font-semibold transition inline-flex items-center gap-2">
+                            <i class="fas fa-download" aria-hidden="true"></i> Resume
+                        </a>
+                        <a href="Project.html"
+                            class="border border-primary-500 text-primary-500 hover:bg-primary-50 px-6 py-3 rounded-full font-semibold transition inline-flex items-center gap-2">
+                            <i class="fas fa-code" aria-hidden="true"></i> Projects
+                        </a>
+                        <a href="Contact.html"
+                            class="bg-purple-500 hover:bg-purple-600 text-white px-6 py-3 rounded-full font-semibold transition inline-flex items-center gap-2">
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i> Hire Me
+                        </a>
+                    </div>
+
+                    <!-- Social Links – now properly on their own line -->
+                    <div class="flex gap-5 text-xl text-gray-400">
+                        <a href="https://github.com/vyankatesh2002" target="_blank" rel="noopener noreferrer"
+                            class="hover:text-primary-500 transition" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/vyankatesh-jaware-0397a325a" target="_blank"
+                            rel="noopener noreferrer" class="hover:text-primary-500 transition" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/vyankatesh_jaware" target="_blank" rel="noopener noreferrer"
+                            class="hover:text-primary-500 transition" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:vyankateshvjaware2002@gmail.com" class="hover:text-primary-500 transition"
+                            aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Profile Image -->
+                <div class="flex-1 flex justify-center" data-aos="zoom-in" data-aos-duration="1000">
+                    <div
+                        class="relative w-64 h-64 lg:w-80 lg:h-80 rounded-full p-1 bg-gradient-to-tr from-primary-500 via-purple-500 to-accent-400">
+                        <img src="images/22561.jpg" alt="Vyankatesh Jaware"
+                            class="w-full h-full object-cover rounded-full border-4 border-white" loading="eager" />
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+                <i class="fas fa-chevron-down text-2xl text-primary-400" aria-hidden="true"></i>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20" aria-label="About Me">
+            <div class="container mx-auto px-6">
+                <h2 class="font-heading text-4xl font-bold mb-12 text-center" data-aos="fade-up">About Me</h2>
+                <div class="max-w-4xl mx-auto glass-card p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="200">
+                    <p class="text-gray-700 text-lg mb-6">
+                        I'm a <strong class="text-gray-900">Computer Science student</strong>
+                        specializing in <strong class="text-primary-500">Artificial Intelligence, Machine Learning, and
+                            Virtual Reality</strong>. My unique journey began with a <strong class="text-gray-900">Diploma
+                            in Pharmacy</strong> and <strong class="text-primary-500">1.5 years of professional
+                            experience</strong> as a Quality Control Associate. Currently, I also work night shifts at
+                        <strong class="text-gray-900">Green Plus Pharmacy</strong>, which sharpens my time management and
+                        discipline.
+                    </p>
+                    <p class="text-gray-700 text-lg">
+                        That background instilled in me <strong class="text-gray-900">discipline, analytical thinking, and
+                            attention to detail</strong> — qualities I now bring to every line of code. I'm driven by a
+                        mission to <strong class="text-primary-500">build AI products that solve real-world healthcare
+                            problems</strong>, merging domain expertise with modern technology.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="py-16 bg-gray-50" aria-label="Statistics">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto text-center">
+                    <article class="glass-card p-6 rounded-2xl" data-aos="fade-up">
+                        <div class="text-4xl font-extrabold text-primary-500">8</div>
+                        <div class="text-gray-600 mt-2">Projects</div>
+                    </article>
+                    <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                        <div class="text-4xl font-extrabold text-primary-500">6</div>
+                        <div class="text-gray-600 mt-2">GitHub Repos</div>
+                    </article>
+                    <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+                        <div class="text-4xl font-extrabold text-primary-500">200</div>
+                        <div class="text-gray-600 mt-2">Learning Hours</div>
+                    </article>
+                    <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="300">
+                        <div class="text-4xl font-extrabold text-primary-500">2</div>
+                        <div class="text-gray-600 mt-2">Years Experience</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20" aria-label="Skills">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <h2 class="font-heading text-4xl font-bold mb-12 text-center" data-aos="fade-up">Skills &amp; Expertise
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <article class="glass-card p-6 rounded-2xl" data-aos="fade-up">
+                        <h3 class="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-800">
+                            <i class="fas fa-code text-primary-500" aria-hidden="true"></i> Programming
+                        </h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-50 text-primary-500 px-3 py-1 rounded-full text-sm">Python</span>
+                            <span class="bg-blue-50 text-primary-500 px-3 py-1 rounded-full text-sm">C++</span>
+                            <span class="bg-blue-50 text-primary-500 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                            <span class="bg-blue-50 text-primary-500 px-3 py-1 rounded-full text-sm">SQL</span>
+                        </div>
+                    </article>
+                    <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="50">
+                        <h3 class="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-800">
+                            <i class="fas fa-desktop text-accent-500" aria-hidden="true"></i> Frontend
+                        </h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-cyan-50 text-accent-500 px-3 py-1 rounded-full text-sm">HTML</span>
+                            <span class="bg-cyan-50 text-accent-500 px-3 py-1 rounded-full text-sm">CSS</span>
+                            <span class="bg-cyan-50 text-accent-500 px-3 py-1 rounded-full text-sm">Tailwind</span>
+                            <span class="bg-cyan-50 text-accent-500 px-3 py-1 rounded-full text-sm">Bootstrap</span>
+                            <span class="bg-cyan-50 text-accent-500 px-3 py-1 rounded-full text-sm">React
+                                (Learning)</span>
+                        </div>
+                    </article>
+                    <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-800">
+                            <i class="fas fa-server text-purple-500" aria-hidden="true"></i> Backend
+                        </h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-purple-50 text-purple-500 px-3 py-1 rounded-full text-sm">Node.js</span>
+                            <span class="bg-purple-50 text-purple-500 px-3 py-1 rounded-full text-sm">Express</span>
+                            <span class="bg-purple-50 text-purple-500 px-3 py-1 rounded-full text-sm">FastAPI
+                                (Learning)</span>
+                        </div>
+                    </article>
+                    <article class="glass-card p-6 rounded-2xl" data-aos="fade-up">
+                        <h3 class="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-800">
+                            <i class="fas fa-database text-green-500" aria-hidden="true"></i> Database
+                        </h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-green-50 text-green-500 px-3 py-1 rounded-full text-sm">MongoDB</span>
+                            <span class="bg-green-50 text-green-500 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
+                            <span class="bg-green-50 text-green-500 px-3 py-1 rounded-full text-sm">Firebase</span>
+                            <span class="bg-green-50 text-green-500 px-3 py-1 rounded-full text-sm">Supabase</span>
+                        </div>
+                    </article>
+                    <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="50">
+                        <h3 class="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-800">
+                            <i class="fas fa-brain text-yellow-500" aria-hidden="true"></i> AI / ML
+                        </h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full text-sm">NumPy</span>
+                            <span class="bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full text-sm">Pandas</span>
+                            <span class="bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full text-sm">Scikit-Learn</span>
+                            <span class="bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full text-sm">TensorFlow</span>
+                            <span class="bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full text-sm">PyTorch</span>
+                            <span class="bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full text-sm">OpenCV</span>
+                            <span class="bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full text-sm">HuggingFace</span>
+                        </div>
+                    </article>
+                    <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-800">
+                            <i class="fas fa-cloud text-sky-500" aria-hidden="true"></i> Cloud &amp; DevOps
+                        </h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-sky-50 text-sky-500 px-3 py-1 rounded-full text-sm">Git</span>
+                            <span class="bg-sky-50 text-sky-500 px-3 py-1 rounded-full text-sm">GitHub</span>
+                            <span class="bg-sky-50 text-sky-500 px-3 py-1 rounded-full text-sm">Docker</span>
+                            <span class="bg-sky-50 text-sky-500 px-3 py-1 rounded-full text-sm">AWS</span>
+                            <span class="bg-sky-50 text-sky-500 px-3 py-1 rounded-full text-sm">Vercel</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-gray-50" aria-label="Featured Projects">
+            <div class="container mx-auto px-6">
+                <h2 class="font-heading text-4xl font-bold mb-12 text-center" data-aos="fade-up">Featured Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto" id="projects-grid">
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education Section -->
+        <section id="experience" class="py-20" aria-label="Education and Experience">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <h2 class="font-heading text-4xl font-bold mb-12 text-center" data-aos="fade-up">Education &amp;
+                    Experience</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 gradient-text" data-aos="fade-up">
+                            <i class="fas fa-graduation-cap mr-2" aria-hidden="true"></i> Education
+                        </h3>
+                        <div class="space-y-6">
+                            <article class="glass-card p-6 rounded-2xl highlight-card" data-aos="fade-up"
+                                data-aos-delay="100">
+                                <span class="text-sm font-semibold text-primary-500">2024 – Present</span>
+                                <h4 class="text-lg font-semibold mt-1">B.Sc Computer Science</h4>
+                                <p class="text-sm text-gray-600">AI · ML · Virtual Reality</p>
+                                <p class="text-xs mt-2 text-gray-500">Sandip University, Nashik</p>
+                            </article>
+                            <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="150">
+                                <span class="text-sm font-semibold text-purple-500">2021 – 2024</span>
+                                <h4 class="text-lg font-semibold mt-1">Diploma in Pharmacy</h4>
+                                <p class="text-sm text-gray-600">Pharmaceutical Sciences · Quality Standards</p>
+                                <p class="text-xs mt-2 text-gray-500">Jijamata College of Pharmacy, Sarati</p>
+                            </article>
+                            <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+                                <span class="text-sm font-semibold text-accent-500">2018 – 2020</span>
+                                <h4 class="text-lg font-semibold mt-1">Higher Secondary (12th)</h4>
+                                <p class="text-sm text-gray-600">Science Stream</p>
+                                <p class="text-xs mt-2 text-gray-500">Saraswati Madhyamik Vidyalay, Sundarkhed</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 gradient-text" data-aos="fade-up">
+                            <i class="fas fa-briefcase mr-2" aria-hidden="true"></i> Experience
+                        </h3>
+                        <div class="space-y-6">
+                            <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                                <span class="text-sm font-semibold text-purple-500">Present · Night Shift</span>
+                                <h4 class="text-lg font-semibold mt-1">Pharmacist (Part-Time)</h4>
+                                <p class="text-sm font-medium text-gray-500">Green Plus Pharmacy</p>
+                                <p class="text-sm mt-2 text-gray-600">
+                                    Manage night operations, dispense medications, and ensure patient safety – while
+                                    studying AI during the day.
+                                </p>
+                            </article>
+                            <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="150">
+                                <span class="text-sm font-semibold text-primary-500">Feb 2023 – May 2024 · 1.5
+                                    Years</span>
+                                <h4 class="text-lg font-semibold mt-1">Quality Control Associate</h4>
+                                <p class="text-sm font-medium text-gray-500">Agio Pharmaceuticals Pvt. Ltd.</p>
+                                <ul class="mt-4 space-y-2 text-sm text-gray-600">
+                                    <li><i class="fas fa-check-circle text-green-500 mr-2" aria-hidden="true"></i> Raw
+                                        material analysis &amp; testing</li>
+                                    <li><i class="fas fa-check-circle text-green-500 mr-2" aria-hidden="true"></i> Quality
+                                        documentation &amp; SOPs</li>
+                                    <li><i class="fas fa-check-circle text-green-500 mr-2" aria-hidden="true"></i> GMP
+                                        compliance</li>
+                                    <li><i class="fas fa-check-circle text-green-500 mr-2" aria-hidden="true"></i>
+                                        Analytical thinking &amp; problem solving</li>
+                                    <li><i class="fas fa-check-circle text-green-500 mr-2" aria-hidden="true"></i>
+                                        Professional discipline &amp; teamwork</li>
+                                </ul>
+                            </article>
+                            <article class="glass-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+                                <span class="text-sm font-semibold text-accent-500">2024 – Present</span>
+                                <h4 class="text-lg font-semibold mt-1">Software Development Journey</h4>
+                                <p class="text-sm text-gray-600">
+                                    Self-taught frontend &amp; AI skills while balancing night shifts. Building real
+                                    projects, contributing to GitHub.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-50" aria-label="Contact">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <h2 class="font-heading text-4xl font-bold mb-12 text-center" data-aos="fade-up">Get In Touch</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div class="glass-card p-8 rounded-3xl" data-aos="fade-right">
+                        <h3 class="text-2xl font-semibold mb-6 flex items-center gap-2 text-gray-900">
+                            <i class="fas fa-paper-plane text-primary-500" aria-hidden="true"></i> Send a Message
+                        </h3>
+                        <form id="contactForm" class="space-y-5" novalidate>
+                            <div>
+                                <input type="text" name="name" placeholder="Your Name" required
+                                    class="w-full bg-transparent border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-primary-500" />
+                            </div>
+                            <div>
+                                <input type="email" name="email" placeholder="Email Address" required
+                                    class="w-full bg-transparent border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-primary-500" />
+                            </div>
+                            <div>
+                                <textarea name="message" placeholder="Your Message" rows="5" required
+                                    class="w-full bg-transparent border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-primary-500"></textarea>
+                            </div>
+                            <button type="submit"
+                                class="bg-primary-500 hover:bg-primary-600 text-white w-full py-3 rounded-full font-semibold transition inline-flex items-center justify-center gap-2">
+                                <i class="fas fa-paper-plane" aria-hidden="true"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                    <div class="glass-card p-8 rounded-3xl flex flex-col justify-center" data-aos="fade-left">
+                        <h3 class="text-2xl font-semibold mb-6 flex items-center gap-2 text-gray-900">
+                            <i class="fas fa-address-card text-purple-500" aria-hidden="true"></i> Contact Info
+                        </h3>
+                        <div class="space-y-4 text-gray-700">
+                            <p><i class="fas fa-envelope text-primary-500 w-6" aria-hidden="true"></i>
+                                vyankateshvjaware2002@gmail.com</p>
+                            <p><i class="fas fa-phone text-primary-500 w-6" aria-hidden="true"></i> +91 99603 40222</p>
+                            <p><i class="fas fa-map-marker-alt text-primary-500 w-6" aria-hidden="true"></i> Nashik,
+                                Maharashtra, India</p>
+                            <p><i class="fab fa-github text-primary-500 w-6" aria-hidden="true"></i>
+                                github.com/vyankatesh2002</p>
+                            <p><i class="fab fa-linkedin text-primary-500 w-6" aria-hidden="true"></i>
+                                linkedin.com/in/vyankatesh-jaware</p>
+                            <div class="flex items-center gap-2 mt-4">
+                                <span class="w-3 h-3 rounded-full bg-green-500" aria-hidden="true"></span>
+                                <span class="text-green-600 font-medium">Available for Internship</span>
+                            </div>
+                        </div>
+                        <div class="mt-6 rounded-xl overflow-hidden" style="height:192px;">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3746985.524464512!2d73.712479!3d20.006347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddf8b0c0c0c0c0%3A0x0!2zMjDCsDAwJzIyLjkiTiA3M8KwNDInNDQuOSJF!5e0!3m2!1sen!2sin!4v1620000000000"
+                                width="100%" height="100%" allowfullscreen="" loading="lazy"
+                                title="Google Maps location of Nashik, Maharashtra"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-gray-200/20">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-lg font-bold gradient-text mb-2 font-heading">Vyankatesh Jaware</p>
+            <p class="text-sm text-gray-500">AI Engineer &amp; Full-Stack Developer</p>
+            <div class="flex justify-center gap-6 mt-4 text-xl text-gray-400">
+                <a href="https://github.com/vyankatesh2002" target="_blank" rel="noopener noreferrer"
+                    class="hover:text-primary-500 transition" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/vyankatesh-jaware-0397a325a" target="_blank"
+                    rel="noopener noreferrer" class="hover:text-primary-500 transition" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/vyankatesh_jaware" target="_blank" rel="noopener noreferrer"
+                    class="hover:text-primary-500 transition" aria-label="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="mailto:vyankateshvjaware2002@gmail.com" class="hover:text-primary-500 transition"
+                    aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="text-xs mt-6 text-gray-400">&copy; 2026 Vyankatesh Jaware. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts (at bottom so DOM is ready) -->
+    <script src="js/script.js">
+    </script>
+    <script src="js/index.js">
+    </script>
 </body>
 
 </html>
