@@ -1,95 +1,280 @@
-8# 🚀 Vyankatesh Jaware
+# 👋 Hi, I'm Vyankatesh Vivekanand Jaware
 
-💻 Web Developer | Building Real Business Websites  
-📍 Maharashtra, India  
+## 🚀 Aspiring AI Engineer | Computer Science Student | Full Stack Developer (Learning)
 
----
-
-## 🔗 Portfolio
-👉 https://vyankatesh2002.github.io/
+💻 Passionate about Artificial Intelligence, Machine Learning, Web Development, and solving real-world problems through technology.
 
 ---
 
-## 💼 What I Do
+# 🌐 Portfolio
 
-I don't just build websites — I build **business assets**.
-
-- High-conversion websites
-- Mobile-first responsive design
-- SEO-optimized structure
-- Real client-focused solutions
+🔗 **Portfolio Website**
+https://vyankatesh2002.github.io/
 
 ---
 
-## 💎 Featured Project
+# 👨‍💻 About Me
 
-### Prabhune Diamonds Website
-🔗 https://prabhunediamond.com
+I am currently pursuing a **Bachelor of Science in Computer Science** with a specialization in **Artificial Intelligence, Machine Learning, and Virtual Reality** at **Sandip University, Nashik**.
 
-- Built from scratch for a real business
-- Fully responsive design
-- WhatsApp lead integration
-- SEO-ready structure
-- Improved customer inquiries
+Before entering the software field, I completed a **Diploma in Pharmacy** and gained **1.5 years of professional experience in Pharmaceutical Quality Control**, where I worked on raw material sampling, quality analysis, documentation, and GMP compliance.
+
+Currently, I am also working in **Green Plus Pharmacy (Night Shift)** while continuing my studies. Balancing work and education has strengthened my discipline, responsibility, time management, and problem-solving abilities.
+
+I am passionate about building software, intelligent applications, and AI-powered solutions that create a meaningful impact—especially in healthcare and business.
+
+My goal is to become a professional AI Engineer and contribute to innovative technology that solves real-world challenges.
 
 ---
 
-## 🛠️ Tech Stack
+# 🎯 Current Goal
 
-**Frontend**
+- 📚 Master JavaScript
+- ⚛️ Learn React
+- 🟢 Learn Node.js & Express
+- 🐍 Improve Python
+- 🤖 Learn AI & Machine Learning
+- 📊 Learn Data Structures & Algorithms
+- 💼 Secure a Software Development Internship
+- 🌍 Pursue a Master's in AI Abroad
+
+---
+
+# 💻 Technical Skills
+
+## Programming Languages
+
+- Python
+- C++
+- JavaScript
+- SQL
+
+---
+
+## Frontend Development
+
 - HTML5
 - CSS3
-- JavaScript 
+- Tailwind CSS
+- Bootstrap
+- Responsive Design
 
-**Tools**
-- Git & GitHub
+---
+
+## Backend (Learning)
+
+- Node.js
+- Express.js
+- FastAPI
+
+---
+
+## Databases
+
+- PostgreSQL
+- MongoDB
+- Firebase
+- Supabase
+
+---
+
+## AI & Machine Learning (Learning)
+
+- NumPy
+- Pandas
+- Scikit-learn
+- TensorFlow
+- PyTorch
+- OpenCV
+
+---
+
+## Tools & Platforms
+
+- Git
+- GitHub
+- VS Code
 - Figma
-- SEO Optimization
+- Vercel
+- Netlify
 
 ---
 
-## 🚀 Projects
+# 🚀 Featured Projects
 
-### 🔢 Calculator
-🔗 https://github.com/vyankatesh2002/Calculator  
-- Real-time calculations  
-- Clean UI  
+## 🌐 Personal Portfolio
 
-### ✅ To-Do List
-🔗 https://github.com/vyankatesh2002/To-Do-List  
-- Task management system  
-- JavaScript-based logic  
+🔗 Live Demo
 
-### 🌐 Portfolio Website
-🔗 https://vyankatesh2002.github.io/  
-- Personal branding  
-- Modern UI & animations  
+https://vyankatesh2002.github.io/
 
----
+Features
 
-## 📈 Current Focus
+- Modern UI
+- Responsive Design
+- Dark Mode
+- Animations
+- Professional Portfolio
 
-- Mastering JavaScript deeply  
-- Building real-world applications  
-- Moving towards Full Stack (Node.js, MongoDB)
+Tech Stack
+
+- HTML
+- CSS
+- JavaScript
+- Tailwind CSS
 
 ---
 
-## ⚡ Strengths
+## 💎 Prabhune Diamonds Website
 
-- Execution over theory  
-- Fast learner  
-- Business-oriented development  
+🌐 Business Website
+
+Features
+
+- Fully Responsive
+- SEO Optimized
+- WhatsApp Integration
+- Modern UI
+- Business Website
 
 ---
 
-## 📬 Contact
+## 🧮 Calculator
 
-📧 vyankateshvjaware2002@gmail.com  
-🔗 LinkedIn: https://www.linkedin.com/in/vyankatesh-jaware-0397a325a  
+Features
+
+- Real-time Calculation
+- Responsive UI
+- JavaScript Logic
+
+Tech
+
+- HTML
+- CSS
+- JavaScript
 
 ---
 
-## ⚡ Mindset
+## ✅ To-Do List
 
-> Build real things. Stay consistent. Think long-term.
+Features
+
+- Add Tasks
+- Delete Tasks
+- Local Storage
+- Responsive Design
+
+Tech
+
+- HTML
+- CSS
+- JavaScript
+
+---
+
+# 💼 Experience
+
+## 🏥 Green Plus Pharmacy
+
+**Night Shift Pharmacist**
+
+Responsibilities
+
+- Medicine Management
+- Patient Support
+- Inventory Handling
+- Customer Service
+
+---
+
+## 🧪 Pharmaceutical Quality Control
+
+**1.5 Years Experience**
+
+Responsibilities
+
+- Raw Material Sampling
+- Quality Analysis
+- Documentation
+- GMP Compliance
+- Laboratory Practices
+
+---
+
+# 📚 Currently Learning
+
+- Advanced JavaScript
+- React
+- Node.js
+- Express.js
+- MongoDB
+- Python
+- Machine Learning
+- Git & GitHub
+- REST APIs
+
+---
+
+# 📈 GitHub Goals (2026)
+
+✅ Build 15+ Projects
+
+✅ Daily GitHub Contributions
+
+✅ Open Source Contributions
+
+✅ Strong Portfolio
+
+✅ Internship Ready
+
+---
+
+# 📫 Connect With Me
+
+📧 Email
+
+**vyankateshvjaware2002@gmail.com**
+
+📱 Phone
+
+**+91 9960340222**
+
+🌐 Portfolio
+
+https://vyankatesh2002.github.io/
+
+💻 GitHub
+
+https://github.com/vyankatesh2002
+
+💼 LinkedIn
+
+https://www.linkedin.com/in/vyankatesh-jaware-0397a325a
+
+📍 Location
+
+Nashik, Maharashtra, India
+
+---
+
+# 📊 GitHub Stats
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=vyankatesh2002&show_icons=true&theme=tokyonight)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=vyankatesh2002&layout=compact&theme=tokyonight)
+
+![GitHub Streak](https://streak-stats.demolab.com?user=vyankatesh2002&theme=tokyonight)
+
+---
+
+# 💡 Philosophy
+
+> **"Keep Learning. Keep Building. Keep Improving."**
+
+I believe continuous learning, consistency, and real-world project experience are the foundation of becoming a great software engineer.
+
+Every project I build is another step toward my goal of becoming an AI Engineer who develops technology that creates a positive impact.
+
+---
+
+⭐ **Thank you for visiting my GitHub profile!**
