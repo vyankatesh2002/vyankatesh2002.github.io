@@ -1,5 +1,5 @@
-/**
- * Index Page JavaScript — Vyankatesh Jaware Portfolio
+﻿/**
+ * Index Page JavaScript â€” Vyankatesh Jaware Portfolio
  * Handles: Projects grid, Typed.js, Contact form, Smooth scroll
  */
 (function () {
@@ -8,31 +8,31 @@
   /* ----- Projects Data ----- */
   const projects = [
     {
-      title: '💎 Prabhune Diamonds',
-      desc: 'Live business website – responsive, SEO optimized, WhatsApp integration.',
+      title: 'ðŸ’Ž Prabhune Diamonds',
+      desc: 'Live business website â€“ responsive, SEO optimized, WhatsApp integration.',
       img: 'https://placehold.co/600x300/f8fafc/2563EB?text=Prabhune+Diamonds',
       tags: ['HTML5', 'CSS3', 'JavaScript', 'SEO'],
       live: 'https://prabhunediamond.com/',
-      github: 'https://github.com/vyankatesh2002/prabhune-diamonds',
+      github: 'https://github.com/vyankatesh2002/prabhune-diamonds-website',
     },
     {
-      title: '🤖 Vandvik AI',
+      title: 'ðŸ¤– Vandvik AI',
       desc: 'AI-focused digital platform exploring intelligent assistance.',
       img: 'https://placehold.co/600x300/f8fafc/7C3AED?text=Vandvik+AI',
       tags: ['HTML5', 'CSS3', 'JS', 'AI Concept'],
-      live: 'https://vyankatesh2002.github.io/Vandvik.com/',
-      github: 'https://github.com/vyankatesh2002/Vandvik',
+      live: '',
+      github: 'https://github.com/vyankatesh2002/vandvik-ai',
     },
     {
-      title: '🏍️ Vynora',
-      desc: 'Premium mobility platform – trusted bike rides in Nashik.',
+      title: 'ðŸï¸ Vynora',
+      desc: 'Premium mobility platform â€“ trusted bike rides in Nashik.',
       img: 'https://placehold.co/600x300/f8fafc/06B6D4?text=Vynora',
       tags: ['HTML5', 'CSS3', 'JS'],
       live: 'https://vyankatesh2002.github.io/vynora/',
       github: 'https://github.com/vyankatesh2002/vynora',
     },
     {
-      title: '🧮 Smart Calculator',
+      title: 'ðŸ§® Smart Calculator',
       desc: 'Real-time calculation app with clean responsive UI.',
       img: 'https://placehold.co/600x300/f8fafc/2563EB?text=Smart+Calculator',
       tags: ['HTML5', 'CSS3', 'JavaScript'],
@@ -40,15 +40,15 @@
       github: 'https://github.com/vyankatesh2002/Calculator',
     },
     {
-      title: '✅ To-Do Pro',
-      desc: 'Task manager with local storage – add, delete, persist tasks.',
+      title: 'âœ… To-Do Pro',
+      desc: 'Task manager with local storage â€“ add, delete, persist tasks.',
       img: 'https://placehold.co/600x300/f8fafc/7C3AED?text=To-Do+App',
       tags: ['HTML5', 'CSS3', 'JS', 'LocalStorage'],
       live: 'https://vyankatesh2002.github.io/To-Do-List/',
       github: 'https://github.com/vyankatesh2002/To-Do-List',
     },
     {
-      title: '🎯 CLD Club',
+      title: 'ðŸŽ¯ CLD Club',
       desc: 'Community platform for learning & leadership.',
       img: 'https://placehold.co/600x300/f8fafc/8b5cf6?text=CLD+Club',
       tags: ['HTML5', 'CSS3', 'Community'],
@@ -56,7 +56,7 @@
       github: null,
     },
     {
-      title: '🧠 MediMind',
+      title: 'ðŸ§  MediMind',
       desc: 'Healthcare digital assistant concept.',
       img: 'https://placehold.co/600x300/f8fafc/2563EB?text=MediMind',
       tags: ['AI', 'Healthcare', 'Concept'],
@@ -119,11 +119,11 @@
   if (typedElement && typeof Typed !== 'undefined') {
     new Typed('#typed', {
       strings: [
-        'AI Engineer',
-        'Machine Learning Engineer',
-        'Python Developer',
-        'Full Stack Developer',
-        'Future Entrepreneur',
+        'AI/ML Student',
+        'Learning Machine Learning',
+        'Python & FastAPI Developer',
+        'Building Web Applications',
+        'Building Vandvik AI',
       ],
       typeSpeed: 50,
       backSpeed: 30,
@@ -167,4 +167,6 @@
     });
   });
 })();
+
+
 
