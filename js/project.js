@@ -1,5 +1,5 @@
-/**
- * Project Page JavaScript — Vyankatesh Jaware Portfolio
+﻿/**
+ * Project Page JavaScript â€” Vyankatesh Jaware Portfolio
  * Handles: Projects grid rendering
  */
 (function () {
@@ -8,23 +8,23 @@
   /* ----- Projects Data ----- */
   const projects = [
     {
-      title: '💎 Prabhune Diamonds',
+      title: 'ðŸ’Ž Prabhune Diamonds',
       desc: 'Live business website for a jewelry brand. Fully responsive, SEO optimized, and WhatsApp integrated.',
       img: 'https://placehold.co/600x300/f8fafc/2563EB?text=Prabhune+Diamonds',
       tags: ['HTML5', 'CSS3', 'JavaScript', 'SEO', 'WhatsApp'],
       live: 'https://prabhunediamond.com/',
-      github: 'https://github.com/vyankatesh2002/prabhune-diamonds',
+      github: 'https://github.com/vyankatesh2002/prabhune-diamonds-website',
     },
     {
-      title: '🤖 Vandvik AI',
+      title: 'ðŸ¤– Vandvik AI',
       desc: 'AI-focused digital platform concept exploring intelligent assistance and futuristic web design.',
       img: 'https://placehold.co/600x300/f8fafc/7C3AED?text=Vandvik+AI',
       tags: ['HTML5', 'CSS3', 'JS', 'AI Concept'],
       live: 'https://vyankatesh2002.github.io/Vandvik.com/',
-      github: 'https://github.com/vyankatesh2002/Vandvik',
+      github: 'https://github.com/vyankatesh2002/Vandvik-web',
     },
     {
-      title: '🏍️ Vynora',
+      title: 'ðŸï¸ Vynora',
       desc: 'Premium mobility platform for trusted bike rides in Nashik. Pay after ride, women-friendly.',
       img: 'https://placehold.co/600x300/f8fafc/06B6D4?text=Vynora',
       tags: ['HTML5', 'CSS3', 'JS', 'Booking'],
@@ -32,7 +32,7 @@
       github: 'https://github.com/vyankatesh2002/vynora',
     },
     {
-      title: '🧮 Smart Calculator',
+      title: 'ðŸ§® Smart Calculator',
       desc: 'Real-time calculation app with clean responsive UI and keyboard support.',
       img: 'https://placehold.co/600x300/f8fafc/2563EB?text=Smart+Calculator',
       tags: ['HTML5', 'CSS3', 'JavaScript'],
@@ -40,15 +40,15 @@
       github: 'https://github.com/vyankatesh2002/Calculator',
     },
     {
-      title: '✅ To-Do Pro',
-      desc: 'Task manager with local storage – add, delete, and persist tasks across sessions.',
+      title: 'âœ… To-Do Pro',
+      desc: 'Task manager with local storage â€“ add, delete, and persist tasks across sessions.',
       img: 'https://placehold.co/600x300/f8fafc/7C3AED?text=To-Do+App',
       tags: ['HTML5', 'CSS3', 'JS', 'LocalStorage'],
       live: 'https://vyankatesh2002.github.io/To-Do-List/',
       github: 'https://github.com/vyankatesh2002/To-Do-List',
     },
     {
-      title: '🎯 CLD Club',
+      title: 'ðŸŽ¯ CLD Club',
       desc: 'Community platform for learning, development, leadership, and growth initiatives.',
       img: 'https://placehold.co/600x300/f8fafc/8b5cf6?text=CLD+Club',
       tags: ['HTML5', 'CSS3', 'Community'],
@@ -56,8 +56,8 @@
       github: null,
     },
     {
-      title: '🧠 MediMind',
-      desc: 'Healthcare digital assistant concept – medicine management and smart healthcare reminders.',
+      title: 'ðŸ§  MediMind',
+      desc: 'Healthcare digital assistant concept â€“ medicine management and smart healthcare reminders.',
       img: 'https://placehold.co/600x300/f8fafc/2563EB?text=MediMind',
       tags: ['AI', 'Healthcare', 'Concept'],
       live: null,
@@ -114,4 +114,5 @@
 
   renderProjects();
 })();
+
 

@@ -1,0 +1,74 @@
+﻿/* Unified responsive baseline */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    max-width: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    min-width: 320px;
+}
+
+img, video, iframe, canvas, svg {
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin-inline: auto;
+}
+
+pre, table {
+    max-width: 100%;
+}
+
+pre {
+    overflow-x: auto;
+}
+
+input, textarea, select, button {
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    nav.no-print > .container {
+        flex-wrap: wrap;
+        row-gap: .75rem;
+    }
+
+    nav.no-print > .container > div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: .75rem;
+        max-width: 100%;
+    }
+
+    pre {
+        white-space: pre;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding-left: .875rem !important;
+        padding-right: .875rem !important;
+    }
+
+    input, textarea, select {
+        width: 100%;
+        min-width: 0;
+    }
+}
